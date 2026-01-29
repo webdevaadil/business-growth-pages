@@ -43,14 +43,21 @@ const Hero = () => {
             </Button>
           </div>
 
-          {/* Trust indicators */}
+          {/* Stats indicators */}
           <div className="mt-16 pt-8 border-t border-primary-foreground/10">
-            <p className="text-primary-foreground/50 text-sm mb-4">Trusted by innovative companies</p>
-            <div className="flex flex-wrap justify-center gap-8 opacity-50">
-              <div className="text-primary-foreground font-semibold">TechStartup</div>
-              <div className="text-primary-foreground font-semibold">GrowthCo</div>
-              <div className="text-primary-foreground font-semibold">InnovateLab</div>
-              <div className="text-primary-foreground font-semibold">ScaleUp</div>
+            <div className="grid grid-cols-3 gap-8 max-w-xl mx-auto">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary-foreground">3+</div>
+                <div className="text-primary-foreground/60 text-sm mt-1">Years Experience</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary-foreground">20+</div>
+                <div className="text-primary-foreground/60 text-sm mt-1">Projects Delivered</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary-foreground">100%</div>
+                <div className="text-primary-foreground/60 text-sm mt-1">Client Satisfaction</div>
+              </div>
             </div>
           </div>
         </div>

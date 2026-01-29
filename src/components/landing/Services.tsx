@@ -1,23 +1,29 @@
-import { Globe, Layout, Code, ArrowUpRight } from "lucide-react";
+import { Globe, Layout, Code, Cloud, ArrowUpRight } from "lucide-react";
 
 const services = [
   {
     icon: Globe,
-    title: "Custom Business Websites",
-    description: "Tailored websites that reflect your brand identity and convert visitors into customers. From corporate sites to e-commerce platforms.",
-    features: ["Custom Design", "CMS Integration", "Analytics Setup"],
+    title: "MERN Stack Development",
+    description: "Full-stack applications using MongoDB, Express.js, React, and Node.js. Scalable and performant solutions.",
+    features: ["MongoDB", "Express.js", "React", "Node.js"],
   },
   {
     icon: Layout,
-    title: "Landing Pages",
-    description: "High-converting landing pages optimized for marketing campaigns, product launches, and lead generation.",
-    features: ["A/B Testing Ready", "Fast Load Times", "Mobile Optimized"],
+    title: "Next.js Applications",
+    description: "Server-side rendered and static websites with Next.js. SEO-optimized and lightning-fast performance.",
+    features: ["SSR/SSG", "API Routes", "SEO Optimized"],
+  },
+  {
+    icon: Cloud,
+    title: "AWS & Cloud Solutions",
+    description: "Cloud infrastructure setup, deployment, and management on AWS. Reliable and scalable hosting solutions.",
+    features: ["AWS EC2/S3", "Cloud Hosting", "CI/CD Pipelines"],
   },
   {
     icon: Code,
-    title: "Full-Stack Web Applications",
-    description: "Complex web applications with robust backends, real-time features, and seamless user experiences.",
-    features: ["Modern Tech Stack", "API Development", "Database Design"],
+    title: "Python Development",
+    description: "Backend APIs, automation scripts, and data-driven applications using Python and modern frameworks.",
+    features: ["Django/Flask", "REST APIs", "Automation"],
   },
 ];
 
@@ -34,7 +40,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
               key={service.title}
