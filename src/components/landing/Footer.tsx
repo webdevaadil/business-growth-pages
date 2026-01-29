@@ -25,15 +25,19 @@ const Footer = () => {
   return (
     <footer className="bg-primary py-16">
       <div className="container px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold text-primary-foreground mb-4">
-              DevStudio
+            <h3 className="text-2xl font-bold text-primary-foreground mb-4">
+              Tech3
             </h3>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-6">
-              Building modern, high-performance websites for startups and small businesses worldwide.
+            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+              3+ years building modern, high-performance web solutions with MERN, Next.js, AWS & Python.
             </p>
+            <div className="text-primary-foreground/60 text-sm space-y-1 mb-6">
+              <p>📧 contact@tech3.dev</p>
+              <p>📞 +1 (234) 567-890</p>
+            </div>
             <div className="flex gap-4">
               {["Twitter", "LinkedIn", "GitHub"].map((social) => (
                 <a
@@ -45,6 +49,20 @@ const Footer = () => {
                 </a>
               ))}
             </div>
+          </div>
+
+          {/* Technologies */}
+          <div>
+            <h4 className="text-sm font-semibold text-primary-foreground mb-4 uppercase tracking-wider">
+              Technologies
+            </h4>
+            <ul className="space-y-3">
+              {["MERN Stack", "Next.js", "AWS Cloud", "Python", "Web Hosting"].map((tech) => (
+                <li key={tech}>
+                  <span className="text-primary-foreground/60 text-sm">{tech}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {/* Services */}
@@ -108,7 +126,7 @@ const Footer = () => {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-primary-foreground/50 text-sm">
-            © {currentYear} DevStudio. All rights reserved.
+            © {currentYear} Tech3. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a href="#" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors text-sm">
