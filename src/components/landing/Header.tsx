@@ -27,8 +27,8 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-6 py-4 rounded-2xl glass-effect bg-primary/80 backdrop-blur-md border border-primary-foreground/10">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="/" className="text-2xl font-bold text-primary-foreground">
-              Tech3
+            <a href="/">
+              <img src={logo} alt="Tech3" className="h-10" />
             </a>
 
             {/* Desktop Navigation */}
