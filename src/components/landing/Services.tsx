@@ -1,4 +1,4 @@
-import { Globe, Layout, Code, Cloud, ArrowUpRight } from "lucide-react";
+import { Globe, Layout, Code, Cloud, ArrowUpRight, ShoppingCart, CreditCard, Smartphone, Shield } from "lucide-react";
 
 const services = [
   {
@@ -24,6 +24,30 @@ const services = [
     title: "Python Development",
     description: "Backend APIs, automation scripts, and data-driven applications using Python and modern frameworks.",
     features: ["Django/Flask", "REST APIs", "Automation"],
+  },
+  {
+    icon: ShoppingCart,
+    title: "E-Commerce Solutions",
+    description: "Custom online stores with product management, cart, checkout, and order tracking. Built to convert visitors into customers.",
+    features: ["Shopify", "WooCommerce", "Custom Stores"],
+  },
+  {
+    icon: CreditCard,
+    title: "Payment Gateway Integration",
+    description: "Secure payment processing with Stripe, Razorpay, PayPal, and more. PCI-compliant and seamless checkout experiences.",
+    features: ["Stripe", "Razorpay", "PayPal"],
+  },
+  {
+    icon: Smartphone,
+    title: "Mobile App Development",
+    description: "Cross-platform mobile applications using React Native. Native-like performance on both iOS and Android.",
+    features: ["React Native", "iOS", "Android"],
+  },
+  {
+    icon: Shield,
+    title: "Cybersecurity & DevOps",
+    description: "Secure your applications with best practices. CI/CD pipelines, monitoring, and infrastructure security.",
+    features: ["SSL/TLS", "Docker", "Monitoring"],
   },
 ];
 
