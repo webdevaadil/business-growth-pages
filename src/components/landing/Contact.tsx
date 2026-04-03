@@ -25,25 +25,25 @@ const Contact = () => {
           {/* Contact cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <a 
-              href="mailto:contact@tech3.dev" 
+              href="mailto:aadilkhany@gmail.com" 
               className="group p-6 rounded-2xl glass-effect hover:bg-primary-foreground/10 transition-all text-center"
             >
               <div className="w-12 h-12 rounded-full gradient-accent mx-auto mb-4 flex items-center justify-center">
                 <Mail className="w-6 h-6 text-accent-foreground" />
               </div>
               <h3 className="text-primary-foreground font-semibold mb-1">Email Us</h3>
-              <p className="text-primary-foreground/60 text-sm">contact@tech3.dev</p>
+              <p className="text-primary-foreground/60 text-sm">aadilkhany@gmail.com</p>
             </a>
 
             <a 
-              href="tel:+1234567890" 
+              href="tel:+918878331005" 
               className="group p-6 rounded-2xl glass-effect hover:bg-primary-foreground/10 transition-all text-center"
             >
               <div className="w-12 h-12 rounded-full gradient-accent mx-auto mb-4 flex items-center justify-center">
                 <Phone className="w-6 h-6 text-accent-foreground" />
               </div>
               <h3 className="text-primary-foreground font-semibold mb-1">Call Us</h3>
-              <p className="text-primary-foreground/60 text-sm">+1 (234) 567-890</p>
+              <p className="text-primary-foreground/60 text-sm">+91 8878331005</p>
             </a>
 
             <a 
