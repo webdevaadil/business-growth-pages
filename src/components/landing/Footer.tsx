@@ -35,8 +35,8 @@ const Footer = () => {
               3+ years building modern, high-performance web solutions with MERN, Next.js, AWS & Python.
             </p>
             <div className="text-primary-foreground/60 text-sm space-y-1 mb-6">
-              <p>📧 contact@tech3.dev</p>
-              <p>📞 +1 (234) 567-890</p>
+              <p>📧 aadilkhany@gmail.com</p>
+              <p>📞 +91-8878331005</p>
             </div>
             <div className="flex gap-4">
               {["Twitter", "LinkedIn", "GitHub"].map((social) => (
