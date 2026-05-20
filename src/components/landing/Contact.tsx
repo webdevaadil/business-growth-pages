@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, ArrowRight, MessageCircle } from "lucide-react";
+import { Mail, Phone, ArrowRight, MessageCircle } from "lucide-react";
+import ConsultationDialog from "./ConsultationDialog";
+
 
 const Contact = () => {
   return (
