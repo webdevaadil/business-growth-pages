@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import ConsultationDialog from "./ConsultationDialog";
+
 
 const Hero = () => {
   return (
