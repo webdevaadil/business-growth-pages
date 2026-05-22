@@ -359,9 +359,8 @@ const Services = () => {
           <div className="container px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               {[
-                { number: "50+", label: "Projects Completed" },
-                { number: "25+", label: "Happy Clients" },
-                { number: "5+", label: "Years Experience" },
+                { number: "25+", label: "Projects Completed" },
+                { number: "4+", label: "Years Experience" },
                 { number: "99%", label: "Client Satisfaction" },
               ].map((item) => (
                 <div key={item.label}>
