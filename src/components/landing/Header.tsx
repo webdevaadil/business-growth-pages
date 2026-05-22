@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,9 @@ const Header = () => {
                   onClick={() => scrollToSection(link.href)}
                   className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
                 >
+                  <Link to={link.href.startsWith("/") ? link.href : undefined}>
                   {link.name}
+                  </Link>
                 </button>
               ))}
             </nav>
