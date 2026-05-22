@@ -41,7 +41,7 @@ const Header = () => {
               {navLinks.map((link) => (
                 <button
                   key={link.name}
-                  onClick={() => scrollToSection(link.href)}
+                  // onClick={() => scrollToSection(link.href)}
                   className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
                 >
                   <Link to={link.href.startsWith("/") ? link.href : undefined}>
