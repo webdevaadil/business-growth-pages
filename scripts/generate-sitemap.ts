@@ -13,6 +13,7 @@ interface SitemapEntry {
 
 const entries: SitemapEntry[] = [
   { path: "https://www.tech3technology.in/", changefreq: "weekly", priority: "1.0" },
+  { path: "https://www.tech3technology.in/services", changefreq: "weekly", priority: "0.9" },
 ];
 
 function generateSitemap(entries: SitemapEntry[]) {
