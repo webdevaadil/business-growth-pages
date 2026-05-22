@@ -5,7 +5,6 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 import { z } from "zod";
 import { Loader2 } from "lucide-react";
 
@@ -41,30 +40,28 @@ const ConsultationDialog = ({ trigger }: Props) => {
       return;
     }
     setLoading(true);
-    const { error } = await supabase.from("consultation_requests").insert({
-      name: parsed.data.name,
-      email: parsed.data.email,
-      phone: parsed.data.phone || null,
-      message: parsed.data.message || null,
-    });
-    setLoading(false);
-    if (error) {
-      toast({ title: "Submission failed", description: error.message, variant: "destructive" });
-      return;
-    }
 
-    // Google Analytics event
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "form_submission", {
-        event_category: "engagement",
-        event_label: "free_consultation",
-        form_name: "free_consultation",
-      });
-    }
+    try {
+      // TODO: Add your email service or API endpoint here to handle form submission
+      // Example: await sendConsultationEmail(parsed.data);
+      
+      // Google Analytics event
+      if (typeof window !== "undefined" && typeof window.gtag === "function") {
+        window.gtag("event", "form_submission", {
+          event_category: "engagement",
+          event_label: "free_consultation",
+          form_name: "free_consultation",
+        });
+      }
 
-    toast({ title: "Request received!", description: "We'll get back to you within 24 hours." });
-    setForm({ name: "", email: "", phone: "", message: "" });
-    setOpen(false);
+      toast({ title: "Request received!", description: "We'll get back to you within 24 hours." });
+      setForm({ name: "", email: "", phone: "", message: "" });
+      setOpen(false);
+    } catch (error) {
+      toast({ title: "Submission failed", description: "Please try again later.", variant: "destructive" });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (

@@ -1,8 +1,9 @@
 import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +17,6 @@ const Header = () => {
 
   const scrollToSection = (href: string) => {
     if (href.startsWith("/")) {
-      window.location.href = href;
       return;
     }
     const element = document.querySelector(href);
@@ -26,28 +26,44 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
+  const handleNavClick = (link: { name: string; href: string }) => {
+    if (link.href.startsWith("/")) {
+      setIsMenuOpen(false);
+    } else {
+      scrollToSection(link.href);
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-4 mt-4">
         <div className="max-w-7xl mx-auto px-6 py-4 rounded-2xl glass-effect bg-primary/80 backdrop-blur-md border border-primary-foreground/10">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href="/">
-              <img src={logo} alt="Tech3" className="h-10" />
-            </a>
+            <Link href="/">
+              <Image src={logo} alt="Tech3" className="h-10 w-auto" />
+            </Link>
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
-                <button
-                  key={link.name}
-                  // onClick={() => scrollToSection(link.href)}
-                  className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
-                >
-                  <Link to={link.href.startsWith("/") ? link.href : undefined}>
-                  {link.name}
+                link.href.startsWith("/") ? (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
+                  >
+                    {link.name}
                   </Link>
-                </button>
+                ) : (
+                  <button
+                    key={link.name}
+                    onClick={() => scrollToSection(link.href)}
+                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
+                  >
+                    {link.name}
+                  </button>
+                )
               ))}
             </nav>
 
@@ -71,15 +87,26 @@ const Header = () => {
           {isMenuOpen && (
             <nav className="md:hidden mt-4 pt-4 border-t border-primary-foreground/10">
               <div className="flex flex-col gap-4">
-                {navLinks.map((link) => (
-                  <button
-                    key={link.name}
-                    onClick={() => scrollToSection(link.href)}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium text-left"
-                  >
-                    {link.name}
-                  </button>
-                ))}
+                {navLinks.map((link) =>
+                  link.href.startsWith("/") ? (
+                    <Link
+                      key={link.name}
+                      href={link.href}
+                      className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium text-left"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <button
+                      key={link.name}
+                      onClick={() => handleNavClick(link)}
+                      className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium text-left"
+                    >
+                      {link.name}
+                    </button>
+                  )
+                )}
                 <Button variant="hero" size="default" className="mt-2">
                   Get Started
                 </Button>

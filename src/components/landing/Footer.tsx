@@ -1,3 +1,4 @@
+import Image from "next/image";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -30,7 +31,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div>
-            <img src={logo} alt="Tech3" className="h-10 mb-4" />
+            <Image src={logo} alt="Tech3" className="h-10 mb-4 w-auto" />
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
               3+ years building modern, high-performance web solutions with MERN, Next.js, AWS & Python.
             </p>
