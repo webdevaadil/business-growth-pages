@@ -8,12 +8,16 @@ const Header = () => {
 
   const navLinks = [
     { name: "Features", href: "#features" },
-    { name: "Services", href: "#services" },
+    { name: "Services", href: "/services" },
     { name: "Process", href: "#process" },
     { name: "About", href: "#about" },
   ];
 
   const scrollToSection = (href: string) => {
+    if (href.startsWith("/")) {
+      window.location.href = href;
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
