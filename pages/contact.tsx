@@ -37,7 +37,8 @@ export default function Contact() {
     telephone: '+91 8878331005',
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'India',
+      addressLocality: 'Indore',
+      addressRegion: 'MP',
       addressCountry: 'IN',
     },
     sameAs: [
@@ -110,7 +111,7 @@ export default function Contact() {
     {
       icon: MapPin,
       title: 'Headquarters',
-      detail: 'India',
+      detail: 'Indore, India',
       description: 'Serving clients globally',
     },
     {
