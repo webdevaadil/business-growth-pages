@@ -1,36 +1,37 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const router = useRouter();
 
   const navLinks = [
     { name: "Features", href: "#features" },
     { name: "Services", href: "/services" },
-    { name: "Process", href: "#process" },
-    { name: "About", href: "#about" },
+    { name: "Portfolio", href: "/portfolio" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "About", href: "/about" },
+    { name: "Blog", href: "/blog" },
   ];
 
-  const scrollToSection = (href: string) => {
-    if (href.startsWith("/")) {
-      return;
-    }
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-    setIsMenuOpen(false);
-  };
-
   const handleNavClick = (link: { name: string; href: string }) => {
+    setIsMenuOpen(false);
     if (link.href.startsWith("/")) {
-      setIsMenuOpen(false);
+      router.push(link.href);
     } else {
-      scrollToSection(link.href);
+      if (router.pathname !== "/") {
+        router.push("/" + link.href);
+      } else {
+        const element = document.querySelector(link.href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
     }
   };
 
@@ -45,7 +46,7 @@ const Header = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center gap-8">
+            <nav className="hidden xl:flex items-center gap-8">
               {navLinks.map((link) => (
                 link.href.startsWith("/") ? (
                   <Link
@@ -58,7 +59,7 @@ const Header = () => {
                 ) : (
                   <button
                     key={link.name}
-                    onClick={() => scrollToSection(link.href)}
+                    onClick={() => handleNavClick(link)}
                     className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
                   >
                     {link.name}
@@ -69,14 +70,16 @@ const Header = () => {
 
             {/* CTA */}
             <div className="hidden md:block">
-              <Button variant="hero" size="default">
-                Get Started
-              </Button>
+              <Link href="/contact">
+                <Button variant="hero" size="default">
+                  Get Started
+                </Button>
+              </Link>
             </div>
 
             {/* Mobile menu button */}
             <button
-              className="md:hidden text-primary-foreground"
+              className="xl:hidden text-primary-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -85,7 +88,7 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <nav className="md:hidden mt-4 pt-4 border-t border-primary-foreground/10">
+            <nav className="xl:hidden mt-4 pt-4 border-t border-primary-foreground/10">
               <div className="flex flex-col gap-4">
                 {navLinks.map((link) =>
                   link.href.startsWith("/") ? (
@@ -107,9 +110,11 @@ const Header = () => {
                     </button>
                   )
                 )}
-                <Button variant="hero" size="default" className="mt-2">
-                  Get Started
-                </Button>
+                <Link href="/contact" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                  <Button variant="hero" size="default" className="mt-2 w-full">
+                    Get Started
+                  </Button>
+                </Link>
               </div>
             </nav>
           )}
@@ -120,3 +125,4 @@ const Header = () => {
 };
 
 export default Header;
+

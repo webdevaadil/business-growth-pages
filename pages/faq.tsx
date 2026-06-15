@@ -11,7 +11,7 @@ export default function FAQ() {
       items: [
         { q: 'What services do you offer?', a: 'We offer web development, mobile apps, e-commerce, cloud deployment, and digital strategy.' },
         { q: 'How long does a project take?', a: 'Timeline varies by project scope. Simple websites take 4-8 weeks, complex apps 3-6 months.' },
-        { q: 'Do you offer ongoing support?', a: 'Yes, we provide maintenance packages starting from $200/month.' }
+        { q: 'Do you offer ongoing support?', a: 'Yes, we provide maintenance packages starting from ₹2,999/month.' }
       ]
     },
     {
@@ -25,7 +25,7 @@ export default function FAQ() {
     {
       category: 'Pricing',
       items: [
-        { q: 'What\'s your minimum project size?', a: 'Minimum is typically $2,999 for basic websites.' },
+        { q: 'What\'s your minimum project size?', a: 'Minimum is typically ₹29,999 for basic websites.' },
         { q: 'Do you offer custom quotes?', a: 'Absolutely. Contact us for a personalized proposal.' },
         { q: 'Can we scale up later?', a: 'Yes, our solutions are built to scale with your business.' }
       ]

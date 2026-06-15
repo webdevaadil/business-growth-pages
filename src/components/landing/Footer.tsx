@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
@@ -6,22 +7,22 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      { name: "Custom Websites", href: "#" },
-      { name: "Landing Pages", href: "#" },
-      { name: "Web Applications", href: "#" },
-      { name: "E-commerce", href: "#" },
+      { name: "Custom Websites", href: "/services/custom-website-development" },
+      { name: "Landing Pages", href: "/services" },
+      { name: "Web Applications", href: "/services/mern-stack-development" },
+      { name: "E-commerce", href: "/services/ecommerce-development" },
     ],
     company: [
-      { name: "About Us", href: "#" },
-      { name: "Our Work", href: "#" },
+      { name: "About Us", href: "/about" },
+      { name: "Our Work", href: "/portfolio" },
       { name: "Careers", href: "#" },
-      { name: "Contact", href: "#" },
+      { name: "Contact", href: "/contact" },
     ],
     resources: [
-      { name: "Blog", href: "#" },
-      { name: "Case Studies", href: "#" },
-      { name: "FAQ", href: "#" },
-      { name: "Support", href: "#" },
+      { name: "Blog", href: "/blog" },
+      { name: "Case Studies", href: "/portfolio" },
+      { name: "FAQ", href: "/faq" },
+      { name: "Support", href: "/contact" },
     ],
   };
 
@@ -33,7 +34,7 @@ const Footer = () => {
           <div>
             <Image src={logo} alt="Tech3" className="h-10 mb-4 w-auto" />
             <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
-              3+ years building modern, high-performance web solutions with MERN, Next.js, AWS & Python.
+              4+ years building modern, high-performance web solutions with MERN, Next.js, AWS & Python.
             </p>
             <div className="text-primary-foreground/60 text-sm space-y-1 mb-6">
               <p>📧 aadilkhany@gmail.com</p>
@@ -74,12 +75,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -93,12 +94,21 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
-                    className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
-                  >
-                    {link.name}
-                  </a>
+                  {link.href.startsWith("/") ? (
+                    <Link
+                      href={link.href}
+                      className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
+                    >
+                      {link.name}
+                    </Link>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
+                    >
+                      {link.name}
+                    </a>
+                  )}
                 </li>
               ))}
             </ul>
@@ -112,12 +122,12 @@ const Footer = () => {
             <ul className="space-y-3">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -130,12 +140,12 @@ const Footer = () => {
             © {currentYear} Tech3. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors text-sm">
+            <Link href="/privacy-policy" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors text-sm">
               Privacy Policy
-            </a>
-            <a href="#" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors text-sm">
+            </Link>
+            <Link href="/terms-conditions" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors text-sm">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

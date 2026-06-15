@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
@@ -30,7 +31,7 @@ export default function CustomWebsiteService() {
           <section className="py-6 bg-background border-b border-border">
             <div className="container px-6">
               <div className="flex items-center gap-2 max-w-4xl mx-auto text-sm">
-                <a href="/services" className="text-accent hover:underline">Services</a>
+                <Link href="/services" className="text-accent hover:underline">Services</Link>
                 <ChevronRight className="w-4 h-4 text-muted-foreground" />
                 <span className="text-muted-foreground">Custom Website Development</span>
               </div>
@@ -46,9 +47,9 @@ export default function CustomWebsiteService() {
                 <p className="text-xl mb-8 opacity-90">
                   Unique, professional websites built from scratch for your business.
                 </p>
-                <a href="/contact">
+                <Link href="/contact">
                   <Button size="xl" variant="hero">Start Your Project</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>

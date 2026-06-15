@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
@@ -18,7 +19,7 @@ export default function InventoryService() {
             <div className="container px-6">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto">Inventory Management System</h1>
               <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">Streamline your inventory with real-time tracking and automated stock management.</p>
-              <a href="/contact"><Button size="xl" variant="hero">Get a Demo</Button></a>
+              <Link href="/contact"><Button size="xl" variant="hero">Get a Demo</Button></Link>
             </div>
           </section>
           <section className="py-20 bg-background">

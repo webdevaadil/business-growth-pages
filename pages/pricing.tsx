@@ -17,7 +17,7 @@ export default function Pricing() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'PriceSpecification',
-    priceCurrency: 'USD',
+    priceCurrency: 'INR',
     price: 'Contact us',
   };
 
@@ -25,7 +25,7 @@ export default function Pricing() {
     {
       name: 'Starter',
       description: 'Perfect for small businesses and startups',
-      price: '$2,999',
+      price: '₹29,999',
       period: 'starting at',
       highlight: false,
       features: [
@@ -75,7 +75,7 @@ export default function Pricing() {
     {
       name: 'Professional',
       description: 'For growing businesses needing advanced features',
-      price: '$7,999',
+      price: '₹79,999',
       period: 'starting at',
       highlight: true,
       features: [
@@ -177,37 +177,37 @@ export default function Pricing() {
   const servicePackages = [
     {
       title: 'Website Development',
-      startingPrice: '$2,999',
+      startingPrice: '₹29,999',
       description: 'Responsive, fast, and SEO-optimized websites',
       features: ['Custom design', 'Mobile responsive', 'SEO', 'CMS integration'],
     },
     {
       title: 'E-Commerce Solutions',
-      startingPrice: '$4,999',
+      startingPrice: '₹49,999',
       description: 'Complete online store with payment processing',
       features: ['Product catalog', 'Shopping cart', 'Payment gateway', 'Analytics'],
     },
     {
       title: 'Web Applications',
-      startingPrice: '$9,999',
+      startingPrice: '₹99,999',
       description: 'Custom web apps for complex business needs',
       features: ['Database design', 'User authentication', 'API development', 'Scalability'],
     },
     {
       title: 'Mobile App Development',
-      startingPrice: '$15,000',
+      startingPrice: '₹1,49,999',
       description: 'iOS and Android native or cross-platform apps',
       features: ['Native development', 'UI/UX design', 'Backend API', 'App store deployment'],
     },
     {
       title: 'CMS Implementation',
-      startingPrice: '$3,999',
+      startingPrice: '₹39,999',
       description: 'Content management systems for easy updates',
       features: ['WordPress', 'Drupal', 'Strapi', 'Training included'],
     },
     {
       title: 'Maintenance & Support',
-      startingPrice: '$299',
+      startingPrice: '₹2,999',
       description: 'Ongoing support and optimization',
       features: ['Monthly updates', '24/7 monitoring', 'Performance optimization', 'Backup & security'],
     },
@@ -232,7 +232,7 @@ export default function Pricing() {
     },
     {
       q: 'What about ongoing maintenance?',
-      a: 'We offer separate maintenance packages starting at $299/month, which includes updates, monitoring, and performance optimization.',
+      a: 'We offer separate maintenance packages starting at ₹2,999/month, which includes updates, monitoring, and performance optimization.',
     },
     {
       q: 'Do you offer discounts for long-term contracts?',
@@ -261,9 +261,9 @@ export default function Pricing() {
           content="Affordable web development and digital solutions with transparent pricing"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tech3technology.com/pricing" />
+        <meta property="og:url" content="https://tech3technology.in/pricing" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://tech3technology.com/pricing" />
+        <link rel="canonical" href="https://tech3technology.in/pricing" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Head>
 

@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
                 <p className="text-muted-foreground mb-6">Our website may contain links to third-party websites. We are not responsible for their privacy practices.</p>
 
                 <h2 className="text-3xl font-bold mt-8 mb-4 text-foreground">5. Contact Us</h2>
-                <p className="text-muted-foreground">If you have questions about this privacy policy, please contact us at privacy@tech3technology.com</p>
+                <p className="text-muted-foreground">If you have questions about this privacy policy, please contact us at aadilkhany@gmail.com</p>
               </div>
             </div>
           </section>

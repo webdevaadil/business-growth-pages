@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
@@ -34,7 +35,7 @@ export default function EcommerceService() {
           <section className="py-6 bg-background border-b border-border">
             <div className="container px-6">
               <div className="flex items-center gap-2 max-w-4xl mx-auto text-sm">
-                <a href="/services" className="text-accent hover:underline">Services</a>
+                <Link href="/services" className="text-accent hover:underline">Services</Link>
                 <ChevronRight className="w-4 h-4 text-muted-foreground" />
                 <span className="text-muted-foreground">E-commerce Development</span>
               </div>
@@ -50,9 +51,9 @@ export default function EcommerceService() {
                 <p className="text-xl mb-8 opacity-90">
                   Build powerful online stores that convert visitors into customers.
                 </p>
-                <a href="/contact">
+                <Link href="/contact">
                   <Button size="xl" variant="hero">Get Started</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -88,9 +89,9 @@ export default function EcommerceService() {
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">
                   Launch Your Online Store Today
                 </h2>
-                <a href="/contact">
+                <Link href="/contact">
                   <Button size="xl" variant="hero">Get a Quote</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -45,46 +46,55 @@ const services = [
     icon: Globe,
     title: "Website Development",
     desc: "Responsive business websites with modern UI/UX.",
+    href: "/services/custom-website-development",
   },
   {
     icon: ShoppingCart,
     title: "Ecommerce Development",
     desc: "Online stores with payment gateway integration.",
+    href: "/services/ecommerce-development",
   },
   {
     icon: Layout,
     title: "MERN Stack Development",
     desc: "Scalable web applications using React & Node.js.",
+    href: "/services/mern-stack-development",
   },
   {
     icon: Database,
     title: "Custom Web Applications",
     desc: "CRM, ERP, dashboards, admin panels.",
+    href: "/services/mern-stack-development",
   },
   {
     icon: Package,
     title: "Inventory Management System",
     desc: "Custom inventory & billing software for businesses.",
+    href: "/services/inventory-management",
   },
   {
     icon: RefreshCw,
     title: "Website Redesign",
     desc: "Upgrade old websites into modern responsive designs.",
+    href: "/services/custom-website-development",
   },
   {
     icon: Code,
     title: "React Development",
     desc: "Interactive frontend development using React.js.",
+    href: "/services/mern-stack-development",
   },
   {
     icon: Server,
     title: "Node.js Backend",
     desc: "Secure and scalable backend systems.",
+    href: "/services/cloud-devops",
   },
   {
     icon: Wrench,
     title: "Website Maintenance",
     desc: "Regular updates, support, and security management.",
+    href: "/services",
   },
 ];
 
@@ -355,9 +365,10 @@ export default function Services() {
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {services.map((service) => (
-                  <div
+                  <Link
                     key={service.title}
-                    className="group p-8 rounded-3xl bg-card/80 backdrop-blur border border-border/50 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+                    href={service.href}
+                    className="group p-8 rounded-3xl bg-card/80 backdrop-blur border border-border/50 shadow-soft hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 block"
                   >
                     <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-accent/20 to-primary/20 flex items-center justify-center mb-5">
                       <service.icon className="w-7 h-7 text-accent" />
@@ -370,7 +381,7 @@ export default function Services() {
                     <p className="text-muted-foreground leading-relaxed">
                       {service.desc}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

@@ -22,8 +22,8 @@ export default function About() {
     '@type': 'Organization',
     name: 'Tech3 Technology',
     description: 'Global web development company delivering innovative digital solutions',
-    url: 'https://tech3technology.com',
-    logo: 'https://tech3technology.com/logo.png',
+    url: 'https://tech3technology.in',
+    logo: 'https://tech3technology.in/logo.png',
     sameAs: [
       'https://www.facebook.com/tech3technology',
       'https://www.linkedin.com/company/tech3technology',
@@ -32,11 +32,11 @@ export default function About() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Support',
-      email: 'hello@tech3technology.com',
+      email: 'aadilkhany@gmail.com',
     },
     areaServed: 'Worldwide',
     foundingDate: '2020',
-    numberOfEmployees: 50,
+    numberOfEmployees: 5,
   };
 
   const values = [
@@ -66,43 +66,10 @@ export default function About() {
     },
   ];
 
-  const team = [
-    {
-      name: 'Aadil Khan',
-      role: 'CEO & Full-Stack Developer',
-      expertise: 'MERN Stack, Cloud Architecture',
-    },
-    {
-      name: 'Priya Sharma',
-      role: 'Lead UI/UX Designer',
-      expertise: 'Design Systems, User Experience',
-    },
-    {
-      name: 'Rajesh Patel',
-      role: 'Senior Backend Developer',
-      expertise: 'Database Design, APIs, DevOps',
-    },
-    {
-      name: 'Nisha Verma',
-      role: 'QA & Testing Lead',
-      expertise: 'Automated Testing, Quality Assurance',
-    },
-    {
-      name: 'Arjun Singh',
-      role: 'Frontend Developer',
-      expertise: 'React, Next.js, Web Performance',
-    },
-    {
-      name: 'Sophia Martin',
-      role: 'Project Manager',
-      expertise: 'Agile, Client Relations, Delivery',
-    },
-  ];
-
   const achievements = [
-    { number: '150+', label: 'Projects Delivered' },
-    { number: '50+', label: 'Team Members' },
-    { number: '5+', label: 'Years Experience' },
+    { number: '25+', label: 'Projects Delivered' },
+    { number: '100%', label: 'On-Time Delivery' },
+    { number: '4+', label: 'Years Experience' },
     { number: '95%', label: 'Client Satisfaction' },
   ];
 
@@ -112,7 +79,7 @@ export default function About() {
         <title>About Tech3 Technology | Web Development Company</title>
         <meta
           name="description"
-          content="Learn about Tech3 Technology, a global web development company delivering innovative digital solutions for businesses worldwide since 2020."
+          content="Learn about Tech3 Technology, a global web development company delivering innovative digital solutions for businesses worldwide since 2022."
         />
         <meta
           name="keywords"
@@ -127,9 +94,9 @@ export default function About() {
           content="Global web development company delivering innovative digital solutions for businesses worldwide"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tech3technology.com/about" />
+        <meta property="og:url" content="https://tech3technology.in/about" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://tech3technology.com/about" />
+        <link rel="canonical" href="https://tech3technology.in/about" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Head>
 
@@ -233,29 +200,6 @@ export default function About() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-16 px-6">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-4">Our Talented Team</h2>
-            <p className="text-center text-muted-foreground text-lg max-w-2xl mx-auto mb-12">
-              A diverse group of experts passionate about creating exceptional digital
-              solutions
-            </p>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {team.map((member, index) => (
-                <div
-                  key={index}
-                  className="p-6 rounded-lg bg-card border border-border hover:shadow-lg transition-shadow"
-                >
-                  <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/50 rounded-lg mb-4" />
-                  <h3 className="text-lg font-bold text-foreground">{member.name}</h3>
-                  <p className="text-accent font-medium text-sm mb-2">{member.role}</p>
-                  <p className="text-muted-foreground text-sm">{member.expertise}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         {/* Why Choose Us */}
         <section className="py-16 px-6 bg-card/50">
@@ -266,12 +210,12 @@ export default function About() {
                 {
                   title: 'Proven Track Record',
                   description:
-                    'Over 150 successful projects delivered globally with consistent quality and client satisfaction rates above 95%.',
+                    'Over 25 successful projects delivered globally with consistent quality and client satisfaction rates above 95%.',
                 },
                 {
-                  title: 'Expert Team',
+                  title: 'Dedicated Team',
                   description:
-                    'Experienced developers, designers, and project managers skilled in latest technologies and best practices.',
+                    'Experienced developers and designers skilled in modern technologies, committed to delivering exceptional web and mobile solutions.',
                 },
                 {
                   title: 'Custom Solutions',
@@ -378,7 +322,7 @@ export default function About() {
               {[
                 {
                   q: 'How long have you been in business?',
-                  a: 'Tech3 Technology was founded in 2020 and has successfully completed over 150 projects for clients worldwide.',
+                  a: 'Tech3 Technology was founded in 2022 and has successfully completed over 25 projects for clients worldwide.',
                 },
                 {
                   q: 'What industries do you work with?',

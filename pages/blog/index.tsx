@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Fragment, useState } from 'react';
+import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 
@@ -9,11 +10,11 @@ export default function BlogIndex() {
   const posts = [
     {
       id: 1,
-      title: 'Why Every Business Needs a Website in 2024',
+      title: 'Why Every Business Needs a Website in 2026',
       excerpt: 'A professional website is no longer optional. Learn why your business needs a digital presence and how it impacts growth.',
       category: 'business',
-      date: '2024-01-15',
-      author: 'Sarah Johnson',
+      date: '2026-06-12',
+      author: 'Aadil Khan',
       readTime: '5 min read',
       slug: 'why-business-needs-website'
     },
@@ -22,8 +23,8 @@ export default function BlogIndex() {
       title: 'MERN Stack vs WordPress: Which is Right for You?',
       excerpt: 'Comparing modern web development frameworks with traditional CMS platforms. Understand the pros and cons of each approach.',
       category: 'development',
-      date: '2024-01-12',
-      author: 'Alex Kumar',
+      date: '2026-05-28',
+      author: 'Aadil Khan',
       readTime: '8 min read',
       slug: 'mern-vs-wordpress'
     },
@@ -32,8 +33,8 @@ export default function BlogIndex() {
       title: 'Complete Guide to E-commerce Website Development',
       excerpt: 'Everything you need to know about building a successful online store. Features, platforms, and best practices included.',
       category: 'ecommerce',
-      date: '2024-01-10',
-      author: 'Maria Garcia',
+      date: '2026-06-05',
+      author: 'Aadil Khan',
       readTime: '10 min read',
       slug: 'ecommerce-development-guide'
     }
@@ -108,38 +109,38 @@ export default function BlogIndex() {
             <div className="container px-6">
               <div className="max-w-4xl mx-auto space-y-8">
                 {filtered.map((post) => (
-                  <article
-                    key={post.id}
-                    className="p-8 bg-card rounded-2xl border border-border hover:border-accent transition-all duration-300 group cursor-pointer"
-                  >
-                    <div className="flex items-start justify-between mb-4">
-                      <span className="px-4 py-1 rounded-full bg-accent/20 text-accent text-sm font-semibold capitalize">
-                        {post.category}
-                      </span>
-                      <span className="text-muted-foreground text-sm">{post.date}</span>
-                    </div>
-
-                    <h2 className="text-3xl font-bold mb-4 text-foreground group-hover:text-accent transition-colors">
-                      {post.title}
-                    </h2>
-
-                    <p className="text-lg text-muted-foreground mb-6">
-                      {post.excerpt}
-                    </p>
-
-                    <div className="flex items-center justify-between">
-                      <div className="space-y-1">
-                        <p className="text-sm text-muted-foreground">By {post.author}</p>
-                        <p className="text-sm text-muted-foreground">{post.readTime}</p>
+                  <Link key={post.id} href={`/blog/${post.slug}`} className="block">
+                    <article
+                      className="p-8 bg-card rounded-2xl border border-border hover:border-accent transition-all duration-300 group cursor-pointer"
+                    >
+                      <div className="flex items-start justify-between mb-4">
+                        <span className="px-4 py-1 rounded-full bg-accent/20 text-accent text-sm font-semibold capitalize">
+                          {post.category}
+                        </span>
+                        <span className="text-muted-foreground text-sm">{post.date}</span>
                       </div>
-                      <a 
-                        href={`/blog/${post.slug}`}
-                        className="px-6 py-2 bg-gradient-accent text-white rounded-lg font-medium hover:opacity-90 transition-opacity"
-                      >
-                        Read More →
-                      </a>
-                    </div>
-                  </article>
+
+                      <h2 className="text-3xl font-bold mb-4 text-foreground group-hover:text-accent transition-colors">
+                        {post.title}
+                      </h2>
+
+                      <p className="text-lg text-muted-foreground mb-6">
+                        {post.excerpt}
+                      </p>
+
+                      <div className="flex items-center justify-between">
+                        <div className="space-y-1">
+                          <p className="text-sm text-muted-foreground">By {post.author}</p>
+                          <p className="text-sm text-muted-foreground">{post.readTime}</p>
+                        </div>
+                        <span 
+                          className="px-6 py-2 bg-gradient-accent text-white rounded-lg font-medium hover:opacity-90 transition-opacity"
+                        >
+                          Read More →
+                        </span>
+                      </div>
+                    </article>
+                  </Link>
                 ))}
               </div>
             </div>

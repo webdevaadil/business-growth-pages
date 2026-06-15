@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
@@ -19,7 +20,7 @@ export default function MobileAppService() {
             <div className="container px-6">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto">Mobile App Development</h1>
               <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">Create powerful iOS and Android apps with React Native for cross-platform success.</p>
-              <a href="/contact"><Button size="xl" variant="hero">Start Your App</Button></a>
+              <Link href="/contact"><Button size="xl" variant="hero">Start Your App</Button></Link>
             </div>
           </section>
           <section className="py-20 bg-background">

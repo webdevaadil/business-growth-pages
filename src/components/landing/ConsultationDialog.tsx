@@ -42,8 +42,17 @@ const ConsultationDialog = ({ trigger }: Props) => {
     setLoading(true);
 
     try {
-      // TODO: Add your email service or API endpoint here to handle form submission
-      // Example: await sendConsultationEmail(parsed.data);
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(parsed.data),
+      });
+
+      if (!response.ok) {
+        throw new Error('API submission failed');
+      }
       
       // Google Analytics event
       if (typeof window !== "undefined" && typeof window.gtag === "function") {

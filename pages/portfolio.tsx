@@ -22,81 +22,207 @@ export default function Portfolio() {
     '@type': 'CollectionPage',
     name: 'Tech3 Technology Portfolio',
     description: 'Showcase of our successful web development and digital projects',
-    url: 'https://tech3technology.com/portfolio',
+    url: 'https://tech3technology.in/portfolio',
   };
 
   const projects = [
     {
-      id: 1,
-      title: 'E-Commerce Platform Redesign',
+      id: 17,
+      title: 'QuickMobile',
       category: 'ecommerce',
-      client: 'Global Retail Solutions',
-      description:
-        'Complete redesign and migration of legacy e-commerce platform to modern MERN stack, resulting in 45% increase in conversion rates.',
-      image: 'https://images.unsplash.com/photo-1460925895917-aaf19ac89472?w=600&h=400&fit=crop',
-      results: ['45% Higher Conversion', '60% Faster Loading', '99.9% Uptime'],
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      link: '#',
+      client: 'QuickMobile',
+      description: 'India’s most transparent mobile selling platform to sell or buy old and used second-hand mobile phones, laptops, tablets, and smartwatches for instant cash with free doorstep pickup.',
+      image: 'https://d2wrrszwsz5iq4.cloudfront.net/categoryBanner/1770745495137-phone%20%281%29.png',
+      features: [
+        'Sell or buy old mobile phones and tablets',
+        'Doorstep pickup with instant cash payment',
+        'Quality-certified refurbished device marketplace',
+        '20-point professional device inspection',
+        'Free warranty and 30-day change-of-mind support'
+      ],
+      technologies: ['Next.js', 'Tailwind CSS', 'Node.js', 'Express.js'],
+      link: 'https://www.quickmobile.in/',
+      repo: null,
     },
     {
-      id: 2,
-      title: 'SaaS Dashboard Development',
+      id: 11,
+      title: 'Growth91',
+      category: 'website',
+      client: 'Growth91',
+      description: 'A digital startup investment marketplace in India enabling investors to discover, co-invest, and track vetted pre-screened startup deals securely.',
+      image: 'https://growth91.com/assets/images/display.png',
+      features: [
+        'Curated startup deals and investment opportunities',
+        'Direct secure funds transfer to startup escrow',
+        'Portfolio tracking and valuation round comparisons',
+        'Vetted pitch decks, financials, and market sentiment',
+        'Indian and global co-investment workflows'
+      ],
+      technologies: ['React.js', 'Tailwind CSS', 'Vercel'],
+      link: 'https://growth91.com/',
+      repo: null,
+    },
+    {
+      id: 10,
+      title: 'CityNect',
+      category: 'website',
+      client: 'CityNect',
+      description: 'A digital flat and flatmate matchmaking portal in Ahmedabad helping users find roommates, search verified house listings, and connect with matching profiles.',
+      image: 'https://citynect.in/logo512.png',
+      features: [
+        'Flat and flatmate matchmaking in Ahmedabad',
+        'Verified listings database and roommate searches',
+        'Direct messaging and profile matching engines',
+        'Seamless, mobile-optimized user experience',
+        'Razorpay integration for subscription payments'
+      ],
+      technologies: ['React.js', 'Tailwind CSS'],
+      link: 'https://citynect.in/',
+      repo: null,
+    },
+    {
+      id: 12,
+      title: 'JadeCaps',
+      category: 'website',
+      client: 'JadeCaps',
+      description: 'A premium vacation rental and holiday home management platform in India, transforming second homes and luxury villas into income-generating stays.',
+      image: 'http://jadecaps.com/New/slider1.jpg',
+      features: [
+        'Holiday home and villa rental management',
+        'Luxury villas, farm stays, and furnished apartments',
+        'Caretaker services and professionally managed stays',
+        'Integration with Marriott Bonvoy and top travel channels',
+        'End-to-end operational and guest support for owners'
+      ],
+      technologies: ['React.js', 'Tailwind CSS', 'Vercel'],
+      link: 'http://jadecaps.com/',
+      repo: null,
+    },
+    {
+      id: 13,
+      title: 'ZroTax',
       category: 'webapp',
-      client: 'Analytics Tech Corp',
-      description:
-        'Built comprehensive analytics dashboard with real-time data visualization and advanced reporting features for 10,000+ users.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      results: ['10K+ Users', '50+ Reports', 'Real-time Data'],
-      technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'D3.js'],
+      client: 'ZroTax',
+      description: 'A financial and tax consultancy service specializing in Indian and international taxation, offering accurate ITR filing, GST compliance, and HUF planning.',
+      image: 'https://static.wixstatic.com/media/d7fb4c_ac4a9b3f2ef14cdaa89d11464a5d9ba3~mv2.png',
+      features: [
+        'Income tax planning and ITR filing guidance',
+        'GST registration and GSTR-1/3B compliance filings',
+        'Hindu Undivided Family (HUF) formation and tax saving',
+        'Capital gains computation and Foreign Tax Credit claims',
+        'Bespoke investment strategies and financial planning'
+      ],
+      technologies: ['React.js', 'Tailwind CSS', 'REST API'],
+      link: 'https://www.zrotax.com/',
+      repo: null,
+    },
+    {
+      id: 18,
+      title: 'Payout Management System',
+      category: 'webapp',
+      client: 'Fintech Payout Platform',
+      description: 'Automated payout processing engine with wallet management, transaction tracking, settlement reports, and admin approval workflows.',
+      image: 'https://images.unsplash.com/photo-1580519542036-c47de6196ba5?w=600&h=400&fit=crop',
+      features: [
+        'Automated payout processing',
+        'Wallet management',
+        'Transaction tracking',
+        'Settlement reports',
+        'Admin approval workflows',
+        'Payment gateway integration',
+        'Financial reporting dashboard'
+      ],
+      technologies: ['Next.js', 'Tailwind CSS', 'Node.js', 'Stripe Connect'],
       link: '#',
+      repo: null,
     },
     {
       id: 3,
-      title: 'Mobile App Development',
-      category: 'mobile',
-      client: 'Fitness & Wellness Co',
-      description:
-        'Native iOS and Android fitness tracking app with social features, workout plans, and nutrition guidance integrated with wearables.',
-      image: 'https://images.unsplash.com/photo-1512941691920-25bef266aad1?w=600&h=400&fit=crop',
-      results: ['1M+ Downloads', '4.8 Star Rating', 'iOS & Android'],
-      technologies: ['React Native', 'Firebase', 'Node.js'],
+      title: 'Parswell',
+      category: 'webapp',
+      client: 'Workflow Management System',
+      description: 'Business workflow management system featuring user role management, detailed dashboard analytics, and a scalable database structure.',
+      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
+      features: [
+        'Business workflow management system',
+        'User role management',
+        'Dashboard analytics',
+        'API-based architecture',
+        'Scalable database structure'
+      ],
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
       link: '#',
+      repo: 'Parswell Repository',
     },
     {
       id: 4,
-      title: 'CRM System Implementation',
+      title: 'CA Management Module',
       category: 'webapp',
-      client: 'Enterprise Sales Group',
-      description:
-        'Custom CRM solution with sales pipeline automation, lead scoring, and integration with email and calendar systems.',
-      image: 'https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=400&fit=crop',
-      results: ['Sales Up 35%', 'Team Efficiency +50%', '200+ Employees'],
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      client: 'Accounting & Admin Panel',
+      description: 'Advanced search and filtering system featuring multi-category filters, dynamic listing management, and optimized data fetching.',
+      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=400&fit=crop',
+      features: [
+        'Advanced search and filtering system',
+        'Multiple category-based filters',
+        'Dynamic listing management',
+        'Performance optimized data fetching',
+        'Admin management panel'
+      ],
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
       link: '#',
+      repo: 'CA Module Repository',
     },
     {
       id: 5,
-      title: 'Inventory Management System',
+      title: 'QRTech',
       category: 'webapp',
-      client: 'Supply Chain Leaders',
-      description:
-        'Real-time inventory tracking system with automated reorder points, warehouse management, and detailed analytics.',
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
-      results: ['Inventory Reduced 25%', 'Real-time Tracking', 'Multi-location'],
-      technologies: ['Next.js', 'PostgreSQL', 'Redis', 'AWS'],
+      client: 'QR Solutions & Analytics',
+      description: 'QR code generation and management platform featuring dynamic tracking, user dashboard, and custom analytics reporting.',
+      image: 'https://images.unsplash.com/photo-1595079676339-1534801ad6cf?w=600&h=400&fit=crop',
+      features: [
+        'QR code generation and management platform',
+        'Dynamic QR tracking',
+        'User dashboard',
+        'Analytics and reporting',
+        'Secure backend APIs'
+      ],
+      technologies: ['MongoDB', 'Express.js', 'React.js', 'Node.js'],
       link: '#',
+      repo: 'QRTech Repository',
     },
     {
       id: 6,
-      title: 'Corporate Website Redesign',
-      category: 'website',
-      client: 'Tech Innovation Inc',
-      description:
-        'Modern, responsive corporate website with content management system, blog, and SEO optimization.',
-      image: 'https://images.unsplash.com/photo-1460925895917-aaf19ac89472?w=600&h=400&fit=crop',
-      results: ['150% Traffic Growth', '#1 Google Rankings', 'Mobile Optimized'],
-      technologies: ['Next.js', 'Tailwind CSS', 'Vercel'],
+      title: 'Tycoon',
+      category: 'webapp',
+      client: 'Modern Business Dashboard',
+      description: 'Modern business dashboard featuring dynamic interactive components, fast API integrations, and fully responsive layouts.',
+      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+      features: [
+        'Modern business dashboard',
+        'Dynamic components',
+        'API integration',
+        'Responsive design'
+      ],
+      technologies: ['React.js', 'Tailwind CSS', 'REST APIs'],
       link: '#',
+      repo: null,
+    },
+    {
+      id: 8,
+      title: 'E-Learning Platform',
+      category: 'webapp',
+      client: 'Online Education Portal',
+      description: 'Online course management system featuring student dashboards, course progress tracking, and interactive learning UI.',
+      image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=600&h=400&fit=crop',
+      features: [
+        'Online course management',
+        'Student dashboard',
+        'Progress tracking',
+        'Interactive UI'
+      ],
+      technologies: ['React.js', 'Tailwind CSS'],
+      link: '#',
+      repo: null,
     },
   ];
 
@@ -152,9 +278,9 @@ export default function Portfolio() {
           content="Explore our successful projects and see how we deliver exceptional digital solutions"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tech3technology.com/portfolio" />
+        <meta property="og:url" content="https://tech3technology.in/portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://tech3technology.com/portfolio" />
+        <link rel="canonical" href="https://tech3technology.in/portfolio" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Head>
 
@@ -200,60 +326,112 @@ export default function Portfolio() {
               {filteredProjects.map((project) => (
                 <div
                   key={project.id}
-                  className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-shadow"
+                  className="bg-card rounded-lg border border-border overflow-hidden hover:shadow-lg transition-shadow flex flex-col h-full"
                 >
                   {/* Image */}
                   <div className="relative h-48 bg-muted overflow-hidden group">
-                    <div className="w-full h-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
-                      <span className="text-muted-foreground text-sm">Project Image</span>
-                    </div>
-                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
-                      <ExternalLink className="w-8 h-8 text-white" />
-                    </div>
+                    {project.image ? (
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
+                    ) : (
+                      <div className="w-full h-full bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+                        <span className="text-muted-foreground text-sm">Project Image</span>
+                      </div>
+                    )}
+                    {project.link && project.link !== '#' ? (
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100"
+                      >
+                        <ExternalLink className="w-8 h-8 text-white drop-shadow" />
+                      </a>
+                    ) : (
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100" />
+                    )}
                   </div>
 
                   {/* Content */}
-                  <div className="p-6">
-                    <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <p className="text-sm text-accent font-medium mb-1">
-                          {project.client}
-                        </p>
-                        <h3 className="text-xl font-bold text-foreground">
-                          {project.title}
-                        </h3>
+                  <div className="p-6 flex flex-col justify-between flex-grow">
+                    <div>
+                      <div className="flex items-start justify-between mb-2">
+                        <div>
+                          <p className="text-sm text-accent font-medium mb-0.5">
+                            {project.client}
+                          </p>
+                          <h3 className="text-xl font-bold text-foreground">
+                            {project.title}
+                          </h3>
+                        </div>
+                      </div>
+
+                      <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
+                        {project.description}
+                      </p>
+
+                      {/* Features list */}
+                      <div className="mb-4 pb-4 border-b border-border/60">
+                        <p className="text-xs font-semibold text-foreground uppercase tracking-wider mb-2">Key Features</p>
+                        <ul className="text-xs text-muted-foreground space-y-1.5 h-28 overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-accent/20">
+                          {project.features.map((feature, idx) => (
+                            <li key={idx} className="flex items-start gap-1.5">
+                              <span className="text-accent mt-0.5">•</span>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
                     </div>
 
-                    <p className="text-muted-foreground text-sm mb-4">
-                      {project.description}
-                    </p>
-
-                    {/* Results */}
-                    <div className="grid grid-cols-3 gap-2 mb-4 pb-4 border-b border-border">
-                      {project.results.map((result, idx) => (
-                        <div key={idx} className="text-center">
-                          <p className="font-bold text-accent text-sm">{result}</p>
+                    <div>
+                      {/* Repo info */}
+                      {project.repo && (
+                        <div className="flex items-center gap-1.5 text-xs text-muted-foreground mb-4 bg-muted/40 p-2 rounded border border-border/50">
+                          <Code className="w-3.5 h-3.5 text-accent shrink-0" />
+                          <span className="truncate">Codebase: {project.repo}</span>
                         </div>
-                      ))}
-                    </div>
+                      )}
 
-                    {/* Tech Stack */}
-                    <div className="flex flex-wrap gap-2 mb-4">
-                      {project.technologies.map((tech, idx) => (
-                        <span
-                          key={idx}
-                          className="text-xs px-2 py-1 rounded bg-accent/10 text-accent font-medium"
+                      {/* Tech Stack */}
+                      <div className="flex flex-wrap gap-1.5 mb-4">
+                        {project.technologies.map((tech, idx) => (
+                          <span
+                            key={idx}
+                            className="text-xs px-2 py-0.5 rounded bg-accent/10 text-accent font-medium"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
+                      {project.link && project.link !== '#' ? (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block w-full"
                         >
-                          {tech}
-                        </span>
-                      ))}
+                          <Button variant="default" size="sm" className="w-full gap-2 text-white bg-accent hover:bg-accent/90">
+                            Visit Live Site
+                            <ExternalLink className="w-4 h-4" />
+                          </Button>
+                        </a>
+                      ) : (
+                        <a
+                          href={`/contact?project=${encodeURIComponent(project.title)}`}
+                          className="block w-full"
+                        >
+                          <Button variant="outline" size="sm" className="w-full gap-2 border-accent/25 hover:border-accent hover:bg-accent/5">
+                            Request Demo / Details
+                            <ArrowRight className="w-4 h-4" />
+                          </Button>
+                        </a>
+                      )}
                     </div>
-
-                    <Button variant="outline" size="sm" className="w-full gap-2">
-                      View Case Study
-                      <ArrowRight className="w-4 h-4" />
-                    </Button>
                   </div>
                 </div>
               ))}
@@ -291,10 +469,10 @@ export default function Portfolio() {
             <h2 className="text-4xl font-bold text-center mb-12">By The Numbers</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {[
-                { number: '150+', label: 'Projects Delivered' },
+                { number: '25+', label: 'Projects Delivered' },
                 { number: '98%', label: 'Client Satisfaction' },
-                { number: '50M+', label: 'Users Impacted' },
-                { number: '5+', label: 'Years Experience' },
+                { number: '1M+', label: 'Users Impacted' },
+                { number: '4+', label: 'Years Experience' },
               ].map((item, idx) => (
                 <div key={idx} className="text-center">
                   <div className="text-4xl font-bold text-accent mb-2">{item.number}</div>

@@ -32,16 +32,13 @@ export default function Contact() {
     '@type': 'LocalBusiness',
     name: 'Tech3 Technology',
     description: 'Global web development company',
-    url: 'https://tech3technology.com',
-    email: 'hello@tech3technology.com',
-    telephone: '+1-800-TECH-123',
+    url: 'https://tech3technology.in',
+    email: 'aadilkhany@gmail.com',
+    telephone: '+91 8878331005',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: '123 Tech Boulevard',
-      addressLocality: 'San Francisco',
-      addressRegion: 'CA',
-      postalCode: '94105',
-      addressCountry: 'US',
+      addressLocality: 'India',
+      addressCountry: 'IN',
     },
     sameAs: [
       'https://www.facebook.com/tech3technology',
@@ -51,7 +48,7 @@ export default function Contact() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Support',
-      email: 'hello@tech3technology.com',
+      email: 'aadilkhany@gmail.com',
       availableLanguage: ['en'],
     },
   };
@@ -66,34 +63,54 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    console.log('Form submitted:', formData);
-    setSubmitted(true);
-    setTimeout(() => {
-      setFormData({ name: '', email: '', company: '', subject: '', message: '' });
-      setSubmitted(false);
-    }, 3000);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: '',
+          message: `Subject: ${formData.subject}\nCompany: ${formData.company || 'N/A'}\n\nMessage:\n${formData.message}`,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('API submission failed');
+      }
+
+      setSubmitted(true);
+      setTimeout(() => {
+        setFormData({ name: '', email: '', company: '', subject: '', message: '' });
+        setSubmitted(false);
+      }, 3000);
+    } catch (error) {
+      console.error('Submission error:', error);
+      alert('Failed to send message. Please try again later.');
+    }
   };
 
   const contactMethods = [
     {
       icon: Mail,
       title: 'Email',
-      detail: 'hello@tech3technology.com',
+      detail: 'aadilkhany@gmail.com',
       description: 'Response within 24 hours',
     },
     {
       icon: Phone,
       title: 'Phone',
-      detail: '+1-800-TECH-123',
-      description: 'Monday - Friday, 9 AM - 6 PM EST',
+      detail: '+91 8878331005',
+      description: 'Monday - Saturday, 10 AM - 7 PM IST',
     },
     {
       icon: MapPin,
       title: 'Headquarters',
-      detail: 'San Francisco, California',
+      detail: 'India',
       description: 'Serving clients globally',
     },
     {
@@ -125,9 +142,9 @@ export default function Contact() {
           content="Reach out to Tech3 Technology for web development and digital solutions. Available 24/7 for support."
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://tech3technology.com/contact" />
+        <meta property="og:url" content="https://tech3technology.in/contact" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="canonical" href="https://tech3technology.com/contact" />
+        <link rel="canonical" href="https://tech3technology.in/contact" />
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Head>
 

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
+import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
@@ -36,7 +37,7 @@ export default function MERNStackService() {
           <section className="py-6 bg-background border-b border-border">
             <div className="container px-6">
               <div className="flex items-center gap-2 max-w-4xl mx-auto text-sm">
-                <a href="/services" className="text-accent hover:underline">Services</a>
+                <Link href="/services" className="text-accent hover:underline">Services</Link>
                 <ChevronRight className="w-4 h-4 text-muted-foreground" />
                 <span className="text-muted-foreground">MERN Stack Development</span>
               </div>
@@ -52,9 +53,9 @@ export default function MERNStackService() {
                 <p className="text-xl mb-8 opacity-90">
                   Build scalable, high-performance web applications using the modern MERN stack.
                 </p>
-                <a href="/contact">
+                <Link href="/contact">
                   <Button size="xl" variant="hero">Get a Quote</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -93,9 +94,9 @@ export default function MERNStackService() {
                 <p className="text-xl mb-8 opacity-90">
                   Let's discuss your project requirements and create a scalable solution.
                 </p>
-                <a href="/contact">
+                <Link href="/contact">
                   <Button size="xl" variant="hero">Schedule a Consultation</Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
