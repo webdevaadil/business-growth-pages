@@ -15,11 +15,11 @@ export default function InventoryService() {
       <div className="min-h-screen">
         <Header />
         <main>
-          <section className="py-20 md:py-32 bg-gradient-hero text-white">
+          <section className="py-20 md:py-32 bg-gradient-hero text-foreground">
             <div className="container px-6">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto">Inventory Management System</h1>
-              <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">Streamline your inventory with real-time tracking and automated stock management.</p>
-              <Link href="/contact"><Button size="xl" variant="hero">Get a Demo</Button></Link>
+               <h1 className="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto">Inventory Management System</h1>
+               <p className="text-xl mb-8 text-muted-foreground max-w-4xl mx-auto">Streamline your inventory with real-time tracking and automated stock management.</p>
+               <Link href="/contact"><Button size="xl" variant="hero">Get a Demo</Button></Link>
             </div>
           </section>
           <section className="py-20 bg-background">

@@ -247,12 +247,12 @@ export default function Services() {
             <div className="container relative z-10 px-6">
               <div className="grid lg:grid-cols-2 gap-16 items-center">
                 <div>
-                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect text-primary-foreground/80 text-sm mb-6">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-slate-200/50 shadow-sm text-foreground text-sm mb-6">
                     <Sparkles className="w-4 h-4 text-accent" />
                     <span>Modern Digital Solutions</span>
                   </div>
 
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-primary-foreground mb-6">
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-foreground mb-6">
                     Custom{" "}
                     <span className="text-gradient">
                       Web Development
@@ -260,7 +260,7 @@ export default function Services() {
                     & Software Solutions
                   </h1>
 
-                  <p className="text-lg text-primary-foreground/70 leading-relaxed mb-8">
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-8">
                     We build scalable websites, ecommerce platforms,
                     MERN stack applications, and custom software
                     solutions for startups, businesses, and enterprises
@@ -284,13 +284,13 @@ export default function Services() {
                     <Button
                       variant="heroOutline"
                       size="xl"
-                      className="text-primary-foreground border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
+                      className="text-foreground border-slate-200 hover:bg-slate-100 hover:text-foreground"
                     >
                       View Portfolio
                     </Button>
                   </div>
 
-                  <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-primary-foreground/80">
+                  <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
                     {[
                       "SEO Friendly",
                       "Fast Delivery",
@@ -315,7 +315,7 @@ export default function Services() {
                       (Icon, i) => (
                         <div
                           key={i}
-                          className="aspect-square rounded-3xl glass-effect border border-white/10 flex items-center justify-center hover:scale-105 transition-transform duration-300"
+                          className="aspect-square rounded-3xl bg-white border border-slate-100 shadow-soft flex items-center justify-center hover:scale-105 transition-transform duration-300"
                         >
                           <Icon className="w-16 h-16 text-accent" />
                         </div>
@@ -535,11 +535,11 @@ export default function Services() {
             </div>
 
             <div className="container relative z-10 px-6 text-center max-w-3xl">
-              <h2 className="text-4xl md:text-5xl font-extrabold text-primary-foreground mb-6">
+              <h2 className="text-4xl md:text-5xl font-extrabold text-foreground mb-6">
                 Let's Build Something Amazing Together
               </h2>
 
-              <p className="text-lg text-primary-foreground/70 mb-8">
+              <p className="text-lg text-muted-foreground mb-8">
                 Start your digital transformation journey with
                 Tech3 Technology. Our team is ready to bring your
                 vision to life.

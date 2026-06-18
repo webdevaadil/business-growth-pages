@@ -42,13 +42,13 @@ export default function EcommerceService() {
             </div>
           </section>
 
-          <section className="py-20 md:py-32 bg-gradient-hero text-white">
+          <section className="py-20 md:py-32 bg-gradient-hero text-foreground">
             <div className="container px-6">
               <div className="max-w-4xl mx-auto">
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">
                   E-commerce Development
                 </h1>
-                <p className="text-xl mb-8 opacity-90">
+                <p className="text-xl mb-8 text-muted-foreground">
                   Build powerful online stores that convert visitors into customers.
                 </p>
                 <Link href="/contact">
@@ -83,7 +83,7 @@ export default function EcommerceService() {
             </div>
           </section>
 
-          <section className="py-20 bg-gradient-hero text-white">
+          <section className="py-20 bg-gradient-hero text-foreground">
             <div className="container px-6">
               <div className="max-w-3xl mx-auto text-center">
                 <h2 className="text-4xl md:text-5xl font-bold mb-6">

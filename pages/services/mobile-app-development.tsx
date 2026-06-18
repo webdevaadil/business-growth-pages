@@ -16,10 +16,10 @@ export default function MobileAppService() {
       <div className="min-h-screen">
         <Header />
         <main>
-          <section className="py-20 md:py-32 bg-gradient-hero text-white">
+          <section className="py-20 md:py-32 bg-gradient-hero text-foreground">
             <div className="container px-6">
               <h1 className="text-5xl md:text-6xl font-bold mb-6 max-w-4xl mx-auto">Mobile App Development</h1>
-              <p className="text-xl mb-8 opacity-90 max-w-4xl mx-auto">Create powerful iOS and Android apps with React Native for cross-platform success.</p>
+              <p className="text-xl mb-8 text-muted-foreground max-w-4xl mx-auto">Create powerful iOS and Android apps with React Native for cross-platform success.</p>
               <Link href="/contact"><Button size="xl" variant="hero">Start Your App</Button></Link>
             </div>
           </section>

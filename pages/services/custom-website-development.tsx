@@ -38,13 +38,13 @@ export default function CustomWebsiteService() {
             </div>
           </section>
 
-          <section className="py-20 md:py-32 bg-gradient-hero text-white">
+          <section className="py-20 md:py-32 bg-gradient-hero text-foreground">
             <div className="container px-6">
               <div className="max-w-4xl mx-auto">
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">
                   Custom Website Development
                 </h1>
-                <p className="text-xl mb-8 opacity-90">
+                <p className="text-xl mb-8 text-muted-foreground">
                   Unique, professional websites built from scratch for your business.
                 </p>
                 <Link href="/contact">

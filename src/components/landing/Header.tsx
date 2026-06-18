@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       <div className="mx-4 mt-4">
-        <div className="max-w-7xl mx-auto px-6 py-4 rounded-2xl glass-effect bg-primary/80 backdrop-blur-md border border-primary-foreground/10">
+        <div className="max-w-7xl mx-auto px-6 py-4 rounded-2xl glass-effect bg-white/80 dark:bg-black/80 backdrop-blur-md border border-slate-200/50 shadow-soft">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/">
@@ -52,7 +52,7 @@ const Header = () => {
                   <Link
                     key={link.name}
                     href={link.href}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
+                    className="text-foreground/70 hover:text-foreground transition-colors text-sm font-medium"
                   >
                     {link.name}
                   </Link>
@@ -60,7 +60,7 @@ const Header = () => {
                   <button
                     key={link.name}
                     onClick={() => handleNavClick(link)}
-                    className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium"
+                    className="text-foreground/70 hover:text-foreground transition-colors text-sm font-medium"
                   >
                     {link.name}
                   </button>
@@ -79,7 +79,7 @@ const Header = () => {
 
             {/* Mobile menu button */}
             <button
-              className="xl:hidden text-primary-foreground"
+              className="xl:hidden text-foreground"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -88,14 +88,14 @@ const Header = () => {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <nav className="xl:hidden mt-4 pt-4 border-t border-primary-foreground/10">
+            <nav className="xl:hidden mt-4 pt-4 border-t border-slate-200/50 max-h-[75vh] overflow-y-auto">
               <div className="flex flex-col gap-4">
                 {navLinks.map((link) =>
                   link.href.startsWith("/") ? (
                     <Link
                       key={link.name}
                       href={link.href}
-                      className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium text-left"
+                      className="text-foreground/70 hover:text-foreground transition-colors text-sm font-medium text-left"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {link.name}
@@ -104,7 +104,7 @@ const Header = () => {
                     <button
                       key={link.name}
                       onClick={() => handleNavClick(link)}
-                      className="text-primary-foreground/70 hover:text-primary-foreground transition-colors text-sm font-medium text-left"
+                      className="text-foreground/70 hover:text-foreground transition-colors text-sm font-medium text-left"
                     >
                       {link.name}
                     </button>

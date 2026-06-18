@@ -27,16 +27,16 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-primary py-16">
+    <footer className="bg-slate-50 border-t border-slate-200/60 py-16">
       <div className="container px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
           <div>
             <Image src={logo} alt="Tech3" className="h-10 mb-4 w-auto" />
-            <p className="text-primary-foreground/60 text-sm leading-relaxed mb-4">
+            <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               4+ years building modern, high-performance web solutions with MERN, Next.js, AWS & Python.
             </p>
-            <div className="text-primary-foreground/60 text-sm space-y-1 mb-6">
+            <div className="text-muted-foreground text-sm space-y-1 mb-6">
               <p>📧 aadilkhany@gmail.com</p>
               <p>📞 +91-8878331005</p>
             </div>
@@ -45,7 +45,7 @@ const Footer = () => {
                 <a
                   key={social}
                   href="#"
-                  className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
+                  className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                 >
                   {social}
                 </a>
@@ -55,13 +55,13 @@ const Footer = () => {
 
           {/* Technologies */}
           <div>
-            <h4 className="text-sm font-semibold text-primary-foreground mb-4 uppercase tracking-wider">
+            <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
               Technologies
             </h4>
             <ul className="space-y-3">
               {["MERN Stack", "Next.js", "AWS Cloud", "Python", "Web Hosting"].map((tech) => (
                 <li key={tech}>
-                  <span className="text-primary-foreground/60 text-sm">{tech}</span>
+                  <span className="text-muted-foreground text-sm">{tech}</span>
                 </li>
               ))}
             </ul>
@@ -69,7 +69,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-sm font-semibold text-primary-foreground mb-4 uppercase tracking-wider">
+            <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
               Services
             </h4>
             <ul className="space-y-3">
@@ -77,7 +77,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -88,7 +88,7 @@ const Footer = () => {
 
           {/* Company */}
           <div>
-            <h4 className="text-sm font-semibold text-primary-foreground mb-4 uppercase tracking-wider">
+            <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
               Company
             </h4>
             <ul className="space-y-3">
@@ -97,14 +97,14 @@ const Footer = () => {
                   {link.href.startsWith("/") ? (
                     <Link
                       href={link.href}
-                      className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                     >
                       {link.name}
                     </Link>
                   ) : (
                     <a
                       href={link.href}
-                      className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
+                      className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                     >
                       {link.name}
                     </a>
@@ -116,7 +116,7 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h4 className="text-sm font-semibold text-primary-foreground mb-4 uppercase tracking-wider">
+            <h4 className="text-sm font-semibold text-foreground mb-4 uppercase tracking-wider">
               Resources
             </h4>
             <ul className="space-y-3">
@@ -124,7 +124,7 @@ const Footer = () => {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-primary-foreground/60 hover:text-primary-foreground transition-colors text-sm"
+                    className="text-muted-foreground hover:text-foreground transition-colors text-sm"
                   >
                     {link.name}
                   </Link>
@@ -135,15 +135,15 @@ const Footer = () => {
         </div>
 
         {/* Bottom bar */}
-        <div className="pt-8 border-t border-primary-foreground/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-primary-foreground/50 text-sm">
+        <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-muted-foreground/80 text-sm">
             © {currentYear} Tech3. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <Link href="/privacy-policy" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors text-sm">
+            <Link href="/privacy-policy" className="text-muted-foreground/80 hover:text-foreground transition-colors text-sm">
               Privacy Policy
             </Link>
-            <Link href="/terms-conditions" className="text-primary-foreground/50 hover:text-primary-foreground transition-colors text-sm">
+            <Link href="/terms-conditions" className="text-muted-foreground/80 hover:text-foreground transition-colors text-sm">
               Terms of Service
             </Link>
           </div>

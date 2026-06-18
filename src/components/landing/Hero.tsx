@@ -18,19 +18,19 @@ const Hero = () => {
       <div className="container relative z-10 px-6 py-20 md:py-32">
         <div className="max-w-4xl mx-auto text-center">
           {/* Badge */}
-          <div className="animate-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect text-primary-foreground/80 text-sm mb-8">
+          <div className="animate-fade-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/85 text-foreground border border-slate-200/50 shadow-sm text-sm mb-8">
             <Sparkles className="w-4 h-4 text-accent" />
             <span>Modern Web Solutions for Growing Businesses</span>
           </div>
 
           {/* Main headline */}
-          <h1 className="animate-fade-up-delay-1 text-4xl md:text-6xl lg:text-7xl font-extrabold text-primary-foreground leading-tight mb-6">
+          <h1 className="animate-fade-up-delay-1 text-4xl md:text-6xl lg:text-7xl font-extrabold text-foreground leading-tight mb-6">
             Build a Website That{" "}
             <span className="text-gradient">Grows Your Business</span>
           </h1>
 
           {/* Subheadline */}
-          <p className="animate-fade-up-delay-2 text-lg md:text-xl text-primary-foreground/70 max-w-2xl mx-auto mb-10">
+          <p className="animate-fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
             We design and develop modern, high-performance websites for startups and small businesses. Fast, secure, and built to convert.
           </p>
 
@@ -45,25 +45,25 @@ const Hero = () => {
               }
             />
 
-            <Button variant="heroOutline" size="xl" className="text-primary-foreground border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary">
+            <Button variant="heroOutline" size="xl" className="text-foreground border-slate-200 hover:bg-slate-100 hover:text-foreground">
               View Our Work
             </Button>
           </div>
 
           {/* Stats indicators */}
-          <div className="mt-16 pt-8 border-t border-primary-foreground/10">
-            <div className="grid grid-cols-3 gap-8 max-w-xl mx-auto">
+          <div className="mt-16 pt-8 border-t border-slate-200/60">
+            <div className="grid grid-cols-3 gap-2 sm:gap-8 max-w-xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary-foreground">4+</div>
-                <div className="text-primary-foreground/60 text-sm mt-1">Years Experience</div>
+                <div className="text-3xl md:text-4xl font-bold text-foreground">4+</div>
+                <div className="text-muted-foreground text-sm mt-1">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary-foreground">25+</div>
-                <div className="text-primary-foreground/60 text-sm mt-1">Projects Delivered</div>
+                <div className="text-3xl md:text-4xl font-bold text-foreground">25+</div>
+                <div className="text-muted-foreground text-sm mt-1">Projects Delivered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl md:text-4xl font-bold text-primary-foreground">99%</div>
-                <div className="text-primary-foreground/60 text-sm mt-1">Client Satisfaction</div>
+                <div className="text-3xl md:text-4xl font-bold text-foreground">99%</div>
+                <div className="text-muted-foreground text-sm mt-1">Client Satisfaction</div>
               </div>
             </div>
           </div>

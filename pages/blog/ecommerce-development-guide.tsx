@@ -120,10 +120,10 @@ export default function EcommerceBlog() {
             </div>
           </section>
 
-          <section className="py-20 bg-gradient-hero text-white">
+          <section className="py-20 bg-gradient-hero text-foreground">
             <div className="container px-6 max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Ready to Build Your Custom E-commerce Store?</h2>
-              <p className="text-lg opacity-85 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Let's develop a high-performance, fast online storefront designed to scale your sales.
               </p>
               <Link href="/contact">

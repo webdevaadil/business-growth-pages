@@ -290,7 +290,7 @@ export default function Pricing() {
                   key={index}
                   className={`rounded-lg border transition-all relative ${
                     tier.highlight
-                      ? 'border-accent bg-card ring-2 ring-accent/20 shadow-xl scale-105'
+                      ? 'border-accent bg-card ring-2 ring-accent/20 shadow-xl md:scale-105'
                       : 'border-border bg-card hover:border-accent'
                   }`}
                 >

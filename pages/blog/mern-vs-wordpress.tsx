@@ -113,10 +113,10 @@ export default function BlogPost() {
             </div>
           </section>
 
-          <section className="py-20 bg-gradient-hero text-white">
+          <section className="py-20 bg-gradient-hero text-foreground">
             <div className="container px-6 max-w-4xl mx-auto text-center">
               <h2 className="text-4xl font-bold mb-6">Need Help Choosing the Right Stack?</h2>
-              <p className="text-lg opacity-85 mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Let's discuss your project requirements and find the perfect technology fit.
               </p>
               <Link href="/contact">
