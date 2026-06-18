@@ -280,14 +280,6 @@ export default function Services() {
                         </Button>
                       }
                     />
-
-                    <Button
-                      variant="heroOutline"
-                      size="xl"
-                      className="text-foreground border-slate-200 hover:bg-slate-100 hover:text-foreground"
-                    >
-                      View Portfolio
-                    </Button>
                   </div>
 
                   <div className="flex flex-wrap gap-x-6 gap-y-3 text-sm text-muted-foreground">
