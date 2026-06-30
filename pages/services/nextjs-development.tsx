@@ -4,30 +4,30 @@ import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
-import { Check, ChevronRight, Package, RefreshCw, BarChart2, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Check, ChevronRight, Server, Search, Zap, Globe, ArrowRight } from 'lucide-react';
 
-export default function InventoryService() {
+export default function NextjsDevelopment() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Inventory Management Software Development',
-    description: 'Custom inventory management software development services for real-time stock tracking, warehouse management, and supply chain audits.',
+    name: 'Next.js Development Services',
+    description: 'Professional Next.js development services. Build server-side rendered (SSR), static site generated (SSG), and SEO-optimized fast web applications.',
     provider: {
       '@type': 'Organization',
       name: 'Tech3 Technology',
       url: 'https://tech3technology.in'
     },
     areaServed: 'Worldwide',
-    serviceType: 'Inventory Software Development'
+    serviceType: 'Next.js Development'
   };
 
   return (
     <Fragment>
       <Head>
-        <title>Inventory Management Software | Stock Tracking Systems | Tech3 Technology</title>
-        <meta name="description" content="Expert inventory management software development services. Build custom stock tracking systems, multi-warehouse integrations, and supply chain auditing tools." />
-        <meta name="keywords" content="inventory management software, custom inventory software, stock tracking system, warehouse management software, supply chain automation" />
-        <link rel="canonical" href="https://tech3technology.in/services/inventory-management" />
+        <title>Next.js Development Services | High Performance Web Apps | Tech3 Technology</title>
+        <meta name="description" content="Supercharge your website loading speeds with our Next.js development services. Clean SSR/SSG setups, SEO optimized configurations, and custom web portals." />
+        <meta name="keywords" content="Next.js development services, NextJS developers, server side rendering, static site generation, React web performance" />
+        <link rel="canonical" href="https://tech3technology.in/services/nextjs-development" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
 
@@ -41,7 +41,7 @@ export default function InventoryService() {
               <div className="flex items-center gap-2 max-w-4xl mx-auto text-sm">
                 <Link href="/services" className="text-accent hover:underline">Services</Link>
                 <ChevronRight className="w-4 h-4 text-muted-foreground" />
-                <span className="text-muted-foreground">Inventory Management Software</span>
+                <span className="text-muted-foreground">Next.js Development</span>
               </div>
             </div>
           </section>
@@ -51,15 +51,15 @@ export default function InventoryService() {
             <div className="container px-6">
               <div className="max-w-4xl mx-auto text-center lg:text-left">
                 <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                  Inventory Management <br />
-                  <span className="text-gradient">Software Development</span>
+                  Next.js Development <br />
+                  <span className="text-gradient">Services & Solutions</span>
                 </h1>
                 <p className="text-xl mb-8 text-muted-foreground max-w-2xl">
-                  Streamline operations, prevent stockouts, and track warehouse movement in real-time with custom-built inventory systems.
+                  Build lightning-fast, production-ready React applications with server-side rendering, static site generation, and optimized Core Web Vitals.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <Link href="/contact">
-                    <Button size="xl" variant="hero">Request Free Demo</Button>
+                    <Button size="xl" variant="hero">Start Next.js Project</Button>
                   </Link>
                 </div>
               </div>
@@ -71,33 +71,33 @@ export default function InventoryService() {
             <div className="container px-6">
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center lg:text-left">
-                  Bespoke Inventory Management Software Features
+                  Why Next.js is Critical for Modern SEO
                 </h2>
                 <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-                  Off-the-shelf stock systems often fail to match specialized manufacturing or distribution workflows. We specialize in building **inventory management software** that handles complex SKU mappings, auto-reordering triggers, and barcode tracking.
+                  Traditional single-page React apps run entirely in the user's browser, which can limit Google indexing capability. Our specialized **Next.js development services** solve this by pre-rendering HTML on the server. This gives you instant load speeds, optimal crawler readability, and better search rankings.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-16">
                   {[
                     {
-                      icon: Package,
-                      title: 'Real-time Stock Tracking',
-                      desc: 'Track incoming raw materials, in-progress items, and finished goods across multiple warehouse locations instantly.'
+                      icon: Server,
+                      title: 'Server-Side Rendering (SSR)',
+                      desc: 'Render dynamic pages on each request. Perfect for content that changes frequently and needs absolute up-to-the-minute accuracy.'
                     },
                     {
-                      icon: RefreshCw,
-                      title: 'Auto-Reorder Triggers',
-                      desc: 'Configure threshold alerts that automatically create purchase requisitions when stock drops below safety margins.'
+                      icon: Globe,
+                      title: 'Static Site Generation (SSG)',
+                      desc: 'Pre-compile pages at build time. Delivers blazing-fast page load speeds under 1 second and reduces server overhead.'
                     },
                     {
-                      icon: BarChart2,
-                      title: 'Analytics & Valuations',
-                      desc: 'Support for FIFO/LIFO evaluation rules, historical sales forecasting, and stock turnover analytics reports.'
+                      icon: Search,
+                      title: 'Zero-Config SEO',
+                      desc: 'Automatic metadata support, responsive title tags, sitemaps, and clean canonical link setups for search engine crawlers.'
                     },
                     {
-                      icon: ShieldCheck,
-                      title: 'Auditing & Permissions',
-                      desc: 'Detailed logs of stock modifications, user actions, and roles-based access limits for staff members.'
+                      icon: Zap,
+                      title: 'Core Web Vitals Optimization',
+                      desc: 'Advanced image sizing, font optimization, dynamic bundle splits, and script loading priorities out of the box.'
                     }
                   ].map((item, idx) => (
                     <div key={idx} className="p-8 bg-card rounded-2xl border border-border shadow-soft hover:shadow-md transition-shadow">
@@ -111,13 +111,13 @@ export default function InventoryService() {
                 </div>
 
                 <div className="p-8 rounded-3xl bg-secondary/30 border border-border/50">
-                  <h3 className="text-2xl font-bold mb-4">Scalable Integrations</h3>
+                  <h3 className="text-2xl font-bold mb-4">Features Included</h3>
                   <div className="grid sm:grid-cols-2 gap-4">
                     {[
-                      'Barcode and RFID hardware scanners',
-                      'E-commerce platforms (Shopify, custom engines)',
-                      'Accounting integrations (Tally, Zoho)',
-                      'Suppliers and purchase ledger workflows'
+                      'Dynamic route handlers and API Endpoints',
+                      'Optimized Image and Font scripts',
+                      'Incremental Static Regeneration (ISR) configuration',
+                      'Vercel or AWS cloud deployment pipeline setup'
                     ].map((bullet, idx) => (
                       <div key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                         <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
@@ -134,14 +134,14 @@ export default function InventoryService() {
           <section className="py-24 bg-gradient-hero text-center">
             <div className="container px-6 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
-                Optimize Your Inventory Operations
+                Ready to Upgrade to Next.js?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Consult with our systems engineers. Build a responsive, highly available inventory management software solution for your enterprise.
+                Consult with our Next.js technical architects. We help with migrations, upgrades, and greenfield application architectures.
               </p>
               <Link href="/contact">
                 <Button size="xl" variant="hero" className="group">
-                  Schedule Free Inventory Call
+                  Schedule Free Next.js Call
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>

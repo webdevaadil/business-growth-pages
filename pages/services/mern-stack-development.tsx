@@ -23,9 +23,9 @@ export default function MERNStackService() {
   return (
     <Fragment>
       <Head>
-        <title>MERN Stack Development | Tech3 Technology</title>
-        <meta name="description" content="Expert MERN stack development services. Build scalable, high-performance web applications with MongoDB, Express, React, and Node.js." />
-        <meta name="keywords" content="MERN stack, web development, React, Node.js, MongoDB, Express" />
+        <title>MERN Stack Development Company | Tech3 Technology</title>
+        <meta name="description" content="Looking for a professional MERN stack development company? We build scalable, high-performance web applications using MongoDB, Express, React, and Node.js." />
+        <meta name="keywords" content="MERN stack development company, MERN stack, web development, React, Node.js, MongoDB, Express" />
         <script type="application/ld+json">
           {JSON.stringify(jsonLd)}
         </script>
@@ -48,10 +48,10 @@ export default function MERNStackService() {
             <div className="container px-6">
               <div className="max-w-4xl mx-auto">
                 <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                  MERN Stack Development
+                  MERN Stack <span className="text-gradient">Development Company</span>
                 </h1>
                 <p className="text-xl mb-8 text-muted-foreground">
-                  Build scalable, high-performance web applications using the modern MERN stack.
+                  Build scalable, high-performance web applications using the modern MERN stack. We specialize in MongoDB, Express, React, and Node.js.
                 </p>
                 <Link href="/contact">
                   <Button size="xl" variant="hero">Get a Quote</Button>

@@ -37,6 +37,26 @@ export default function BlogIndex() {
       author: 'Aadil Khan',
       readTime: '10 min read',
       slug: 'ecommerce-development-guide'
+    },
+    {
+      id: 4,
+      title: 'Scaling Business Operations with Custom SaaS Platforms',
+      excerpt: 'Learn how custom CRM, School ERP, and Billing SaaS applications automate operations, reduce costs, and scale business models.',
+      category: 'development',
+      date: '2026-07-01',
+      author: 'Aadil Khan',
+      readTime: '6 min read',
+      slug: 'tech3-saas-products-suite'
+    },
+    {
+      id: 5,
+      title: 'Best CRM Software in Indore for Lead Management & Sales Automation (2026 Guide)',
+      excerpt: 'Looking for the best CRM software in Indore? Discover how Tech3 Technology helps businesses automate lead management, Meta Ads integration, sales tracking, and follow-ups.',
+      category: 'business',
+      date: '2026-07-01',
+      author: 'Aadil Khan',
+      readTime: '7 min read',
+      slug: 'best-crm-software-indore'
     }
   ];
 

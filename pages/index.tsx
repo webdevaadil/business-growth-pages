@@ -12,8 +12,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Business Growth Pages</title>
-        <meta name="description" content="Grow your business with our solutions" />
+        <title>Tech3 Technology | Custom Web & Software Development Company</title>
+        <meta name="description" content="Grow your business with Tech3 Technology. We offer professional custom software development, MERN stack, Next.js, and billing solutions to scale your business." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <div className="min-h-screen">

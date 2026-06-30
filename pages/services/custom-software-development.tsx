@@ -4,30 +4,30 @@ import Link from 'next/link';
 import Header from '@/components/landing/Header';
 import Footer from '@/components/landing/Footer';
 import { Button } from '@/components/ui/button';
-import { Check, ChevronRight, Package, RefreshCw, BarChart2, ShieldCheck, ArrowRight } from 'lucide-react';
+import { Check, ChevronRight, Settings, Users, Database, ArrowRight } from 'lucide-react';
 
-export default function InventoryService() {
+export default function CustomSoftwareDevelopment() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    name: 'Inventory Management Software Development',
-    description: 'Custom inventory management software development services for real-time stock tracking, warehouse management, and supply chain audits.',
+    name: 'Custom Software Development Services',
+    description: 'Expert custom software development company building tailored CRM, ERP, and bespoke business applications.',
     provider: {
       '@type': 'Organization',
       name: 'Tech3 Technology',
       url: 'https://tech3technology.in'
     },
     areaServed: 'Worldwide',
-    serviceType: 'Inventory Software Development'
+    serviceType: 'Custom Software Development'
   };
 
   return (
     <Fragment>
       <Head>
-        <title>Inventory Management Software | Stock Tracking Systems | Tech3 Technology</title>
-        <meta name="description" content="Expert inventory management software development services. Build custom stock tracking systems, multi-warehouse integrations, and supply chain auditing tools." />
-        <meta name="keywords" content="inventory management software, custom inventory software, stock tracking system, warehouse management software, supply chain automation" />
-        <link rel="canonical" href="https://tech3technology.in/services/inventory-management" />
+        <title>Custom Software Development Company in Indore | Tech3</title>
+        <meta name="description" content="Looking for a reliable custom software development company in Indore? We build tailored CRM, ERP, API integrations, and scalable business software solutions." />
+        <meta name="keywords" content="custom software development company in indore, custom software development indore, CRM developers indore, ERP development Indore, Tech3 Technology" />
+        <link rel="canonical" href="https://tech3technology.in/services/custom-software-development" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
 
@@ -41,7 +41,7 @@ export default function InventoryService() {
               <div className="flex items-center gap-2 max-w-4xl mx-auto text-sm">
                 <Link href="/services" className="text-accent hover:underline">Services</Link>
                 <ChevronRight className="w-4 h-4 text-muted-foreground" />
-                <span className="text-muted-foreground">Inventory Management Software</span>
+                <span className="text-muted-foreground">Custom Software Development</span>
               </div>
             </div>
           </section>
@@ -51,53 +51,53 @@ export default function InventoryService() {
             <div className="container px-6">
               <div className="max-w-4xl mx-auto text-center lg:text-left">
                 <h1 className="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
-                  Inventory Management <br />
-                  <span className="text-gradient">Software Development</span>
+                  Custom Software <br />
+                  <span className="text-gradient">Development in Indore</span>
                 </h1>
                 <p className="text-xl mb-8 text-muted-foreground max-w-2xl">
-                  Streamline operations, prevent stockouts, and track warehouse movement in real-time with custom-built inventory systems.
+                  Streamline operations, automate complex workflows, and build proprietary software assets designed specifically for your unique business logic.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <Link href="/contact">
-                    <Button size="xl" variant="hero">Request Free Demo</Button>
+                    <Button size="xl" variant="hero">Start Your Project</Button>
                   </Link>
                 </div>
               </div>
             </div>
           </section>
 
-          {/* FEATURES SECTION */}
+          {/* CONTENT SECTION */}
           <section className="py-24 bg-background">
             <div className="container px-6">
               <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center lg:text-left">
-                  Bespoke Inventory Management Software Features
+                  Bespoke Software Solutions for Modern Enterprises
                 </h2>
                 <p className="text-lg text-muted-foreground mb-12 leading-relaxed">
-                  Off-the-shelf stock systems often fail to match specialized manufacturing or distribution workflows. We specialize in building **inventory management software** that handles complex SKU mappings, auto-reordering triggers, and barcode tracking.
+                  Off-the-shelf software often forces you to change your workflows to match the system. As a leading **custom software development company**, we build solutions that adapt to *your* processes, ensuring higher efficiency, security, and scalability.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-16">
                   {[
                     {
-                      icon: Package,
-                      title: 'Real-time Stock Tracking',
-                      desc: 'Track incoming raw materials, in-progress items, and finished goods across multiple warehouse locations instantly.'
+                      icon: Users,
+                      title: 'Tailored CRM Solutions',
+                      desc: 'Manage customer journeys, track leads, and automate client follow-ups with a CRM built specifically for your sales cycle.'
                     },
                     {
-                      icon: RefreshCw,
-                      title: 'Auto-Reorder Triggers',
-                      desc: 'Configure threshold alerts that automatically create purchase requisitions when stock drops below safety margins.'
+                      icon: Settings,
+                      title: 'Custom ERP Systems',
+                      desc: 'Integrate departments like finance, inventory, human resources, and operations into a single, unified database.'
                     },
                     {
-                      icon: BarChart2,
-                      title: 'Analytics & Valuations',
-                      desc: 'Support for FIFO/LIFO evaluation rules, historical sales forecasting, and stock turnover analytics reports.'
+                      icon: Database,
+                      title: 'Database & API Integrations',
+                      desc: 'Connect disparate systems, legacy applications, and third-party APIs seamlessly to eliminate data silos.'
                     },
                     {
-                      icon: ShieldCheck,
-                      title: 'Auditing & Permissions',
-                      desc: 'Detailed logs of stock modifications, user actions, and roles-based access limits for staff members.'
+                      icon: Check,
+                      title: 'Workflow Automation',
+                      desc: 'Replace repetitive manual tasks with automated triggers and secure digital pipelines to save time and prevent errors.'
                     }
                   ].map((item, idx) => (
                     <div key={idx} className="p-8 bg-card rounded-2xl border border-border shadow-soft hover:shadow-md transition-shadow">
@@ -111,13 +111,13 @@ export default function InventoryService() {
                 </div>
 
                 <div className="p-8 rounded-3xl bg-secondary/30 border border-border/50">
-                  <h3 className="text-2xl font-bold mb-4">Scalable Integrations</h3>
+                  <h3 className="text-2xl font-bold mb-4">Why Invest in Custom Software?</h3>
                   <div className="grid sm:grid-cols-2 gap-4">
                     {[
-                      'Barcode and RFID hardware scanners',
-                      'E-commerce platforms (Shopify, custom engines)',
-                      'Accounting integrations (Tally, Zoho)',
-                      'Suppliers and purchase ledger workflows'
+                      '100% ownership with zero recurring license fees',
+                      'High scalability that grows with your transaction volume',
+                      'Enhanced security parameters customized to your threat model',
+                      'Seamless integration with your existing tools and workflows'
                     ].map((bullet, idx) => (
                       <div key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
                         <Check className="w-5 h-5 text-accent shrink-0 mt-0.5" />
@@ -134,14 +134,14 @@ export default function InventoryService() {
           <section className="py-24 bg-gradient-hero text-center">
             <div className="container px-6 max-w-3xl mx-auto">
               <h2 className="text-3xl md:text-5xl font-extrabold mb-6">
-                Optimize Your Inventory Operations
+                Ready to Automate Your Business?
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
-                Consult with our systems engineers. Build a responsive, highly available inventory management software solution for your enterprise.
+                Consult with our custom software experts today. We offer a free architectural blueprint for your project.
               </p>
               <Link href="/contact">
                 <Button size="xl" variant="hero" className="group">
-                  Schedule Free Inventory Call
+                  Schedule Free Blueprint Call
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>

@@ -1,20 +1,20 @@
 import Link from "next/link";
-import { Globe, Layout, Code, Cloud, ArrowUpRight, ShoppingCart, CreditCard, Smartphone, Shield } from "lucide-react";
+import { Globe, Layout, Code, Cloud, ArrowUpRight, ShoppingCart, CreditCard, Smartphone, Shield, Laptop, FileText } from "lucide-react";
 
 const services = [
   {
     icon: Globe,
     title: "MERN Stack Development",
-    description: "Full-stack applications using MongoDB, Express.js, React, and Node.js. Scalable and performant solutions.",
+    description: "Build custom full-stack solutions with our expert MERN stack development company. Highly scalable and performant.",
     features: ["MongoDB", "Express.js", "React", "Node.js"],
     href: "/services/mern-stack-development"
   },
   {
     icon: Layout,
-    title: "Next.js Applications",
-    description: "Server-side rendered and static websites with Next.js. SEO-optimized and lightning-fast performance.",
-    features: ["SSR/SSG", "API Routes", "SEO Optimized"],
-    href: "/services/custom-website-development"
+    title: "Next.js Development",
+    description: "Supercharge page load speeds and search engine rankings with our Next.js development services.",
+    features: ["SSR & SSG", "Core Web Vitals", "SEO Ready"],
+    href: "/services/nextjs-development"
   },
   {
     icon: Cloud,
@@ -24,11 +24,11 @@ const services = [
     href: "/services/cloud-devops"
   },
   {
-    icon: Code,
-    title: "Python Development",
-    description: "Backend APIs, automation scripts, and data-driven applications using Python and modern frameworks.",
-    features: ["Django/Flask", "REST APIs", "Automation"],
-    href: "/services/cloud-devops"
+    icon: Laptop,
+    title: "Custom Software Development",
+    description: "Bespoke digital architecture, database setups, ERPs, and workflow engines with a custom software development company.",
+    features: ["Tailored ERP/CRM", "API Integrations", "Database Setup"],
+    href: "/services/custom-software-development"
   },
   {
     icon: ShoppingCart,
@@ -38,18 +38,18 @@ const services = [
     href: "/services/ecommerce-development"
   },
   {
-    icon: CreditCard,
-    title: "Payment Gateway Integration",
-    description: "Secure payment processing with Stripe, Razorpay, PayPal, and more. PCI-compliant and seamless checkout experiences.",
-    features: ["Stripe", "Razorpay", "PayPal"],
-    href: "/services/ecommerce-development"
+    icon: FileText,
+    title: "Billing Software Development",
+    description: "Automate financial pipelines, invoices, and POS transactions with custom billing software development.",
+    features: ["GST Invoicing", "POS Integrations", "Sales Reports"],
+    href: "/services/billing-software-development"
   },
   {
-    icon: Smartphone,
-    title: "Mobile App Development",
-    description: "Cross-platform mobile applications using React Native. Native-like performance on both iOS and Android.",
-    features: ["React Native", "iOS", "Android"],
-    href: "/services/mobile-app-development"
+    icon: Code,
+    title: "React Development Company",
+    description: "Build highly interactive single-page applications and modular frontend architectures with ReactJS.",
+    features: ["Component Libraries", "State Management", "SPAs"],
+    href: "/services/react-development"
   },
   {
     icon: Shield,

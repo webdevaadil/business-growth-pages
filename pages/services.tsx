@@ -35,6 +35,8 @@ import {
   Factory,
   Sparkles,
   Truck,
+  FileText,
+  Laptop
 } from "lucide-react";
 
 import Header from "@/components/landing/Header";
@@ -56,38 +58,38 @@ const services = [
   },
   {
     icon: Layout,
-    title: "MERN Stack Development",
-    desc: "Scalable web applications using React & Node.js.",
+    title: "MERN Stack Development Company",
+    desc: "Scalable full-stack web applications using MongoDB, Express, React, Node.",
     href: "/services/mern-stack-development",
   },
   {
-    icon: Database,
-    title: "Custom Web Applications",
-    desc: "CRM, ERP, dashboards, admin panels.",
-    href: "/services/mern-stack-development",
+    icon: Laptop,
+    title: "Custom Software Development",
+    desc: "Bespoke CRM, ERP, and enterprise software systems designed for your logic.",
+    href: "/services/custom-software-development",
   },
   {
     icon: Package,
-    title: "Inventory Management System",
-    desc: "Custom inventory & billing software for businesses.",
+    title: "Inventory Management Software",
+    desc: "Custom inventory management, warehouses, and supply tracking.",
     href: "/services/inventory-management",
   },
   {
-    icon: RefreshCw,
-    title: "Website Redesign",
-    desc: "Upgrade old websites into modern responsive designs.",
-    href: "/services/custom-website-development",
+    icon: FileText,
+    title: "Billing Software Development",
+    desc: "Automated GST invoicing, point of sale (POS) and ledger reporting.",
+    href: "/services/billing-software-development",
   },
   {
     icon: Code,
-    title: "React Development",
-    desc: "Interactive frontend development using React.js.",
-    href: "/services/mern-stack-development",
+    title: "React Development Company",
+    desc: "Interactive frontend single-page applications using ReactJS.",
+    href: "/services/react-development",
   },
   {
     icon: Server,
-    title: "Node.js Backend",
-    desc: "Secure and scalable backend systems.",
+    title: "Node.js Backend Solutions",
+    desc: "Secure and scalable API systems and database management.",
     href: "/services/cloud-devops",
   },
   {
