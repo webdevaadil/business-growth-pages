@@ -87,6 +87,12 @@ const services = [
     href: "/services/react-development",
   },
   {
+    icon: Smartphone,
+    title: "Mobile App Development",
+    desc: "Cross-platform iOS and Android mobile applications using React Native.",
+    href: "/services/mobile-app-development",
+  },
+  {
     icon: Server,
     title: "Node.js Backend Solutions",
     desc: "Secure and scalable API systems and database management.",

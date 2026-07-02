@@ -264,7 +264,7 @@ export default function Pricing() {
         <meta property="og:url" content="https://tech3technology.in/pricing" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="canonical" href="https://tech3technology.in/pricing" />
-        <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
 
       <Header />

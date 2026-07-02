@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/rktd283PIz8bY93wOpOQC/_buildManifest.js",
-    "static/rktd283PIz8bY93wOpOQC/_ssgManifest.js"
+    "static/IFHAf2HLUCkhYeQeqzU-Q/_buildManifest.js",
+    "static/IFHAf2HLUCkhYeQeqzU-Q/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -140,7 +140,7 @@
       "static/chunks/785-ab9237842d040549.js",
       "static/chunks/905-05eb3fac43c1152d.js",
       "static/chunks/515-31949cdfe658daac.js",
-      "static/chunks/pages/pricing-6a3933e261ef48f0.js"
+      "static/chunks/pages/pricing-ae44269f16e42816.js"
     ],
     "/privacy-policy": [
       "static/chunks/webpack-5146130448d8adf7.js",
@@ -169,7 +169,7 @@
       "static/chunks/905-05eb3fac43c1152d.js",
       "static/chunks/6-e2220adda9437fe9.js",
       "static/chunks/515-31949cdfe658daac.js",
-      "static/chunks/pages/services-4f84b54927a439e8.js"
+      "static/chunks/pages/services-8bf8da9c209e80b6.js"
     ],
     "/services/billing-software-development": [
       "static/chunks/webpack-5146130448d8adf7.js",
@@ -187,7 +187,7 @@
       "static/chunks/63-fbe88bc2b1022496.js",
       "static/chunks/785-ab9237842d040549.js",
       "static/chunks/515-31949cdfe658daac.js",
-      "static/chunks/407-da7649262642a7ef.js",
+      "static/chunks/407-41e8bf5e348ba356.js",
       "static/chunks/pages/services/cloud-devop-2628008af254d534.js"
     ],
     "/services/cloud-devops": [
@@ -197,7 +197,7 @@
       "static/chunks/63-fbe88bc2b1022496.js",
       "static/chunks/785-ab9237842d040549.js",
       "static/chunks/515-31949cdfe658daac.js",
-      "static/chunks/407-da7649262642a7ef.js",
+      "static/chunks/407-41e8bf5e348ba356.js",
       "static/chunks/pages/services/cloud-devops-29def6226b1541d9.js"
     ],
     "/services/custom-software-development": [

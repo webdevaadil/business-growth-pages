@@ -89,9 +89,7 @@ export default function CloudDevopsService() {
         <title>Cloud & DevOps Services | AWS, GCP, VPS & CI/CD | Tech3 Technology</title>
         <meta name="description" content="Deploy, scale, and automate your application infrastructure. Expert setup for AWS, GCP, VPS Linux servers, Docker, and GitHub Actions CI/CD." />
         <meta name="keywords" content="AWS, GCP, VPS, CI/CD, Docker, Kubernetes, Nginx, server setup, DevOps, cloud deployment" />
-        <script type="application/ld+json">
-          {JSON.stringify(jsonLd)}
-        </script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </Head>
 
       <div className="min-h-screen bg-background">
